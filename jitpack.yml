@@ -1,0 +1,2 @@
+install:
+mvn install:install-file -Dfile=ultralite-sdk-android.aar -DpomFile=ultralite-sdk-android.pom -Djavadoc=ultralite-sdk-android-javadoc.jar -DgroupId=com.vuzix -DartifactId=ultralite-sdk-android -Dversion=1.0 -Dpackaging=aar -DgeneratePom=true
