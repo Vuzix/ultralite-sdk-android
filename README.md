@@ -1,7 +1,7 @@
 [![](https://jitpack.io/v/com.vuzix/ultralite-sdk-android.svg)](https://jitpack.io/#com.vuzix/ultralite-sdk-android)
 
 # Ultralite SDK for Android
-Use this library to send content from your app to Vuzix Ultralite smart glasses.
+Use this library to send content from your app to any pair of smart glasses made via the Vuzix Ultralite OEM Platform<sup>SM</sup>.
 
 ## Requirements
 - Android device running Andorid 12 or later
