@@ -40,4 +40,4 @@ The SDK may not be available for immediate use. It's also possible the SDK will 
 
 An app that wishes to control the glasses must use `requestControl()`. If there are glasses connected, this request should normally be granted. You should also monitor the control status with either `isControlledByMe()` or `getControlledByMe()`. When another app requests control, your app will be notified that control has been lost. You can also lose control if the connection is broken or if the glasses are unlinked. When control is lost, assume all of your configuration such as layout and canvas state is gone. The next time you gain control, you will have to setup this configuration again.
 
-Once control has been successfully requested, you can use methods such as `setLayout()`, `sendText()` or any of the Canvas methods. Other methods can be called without having control. See javadoc for more information.
+Once control has been successfully requested, you can use methods such as `setLayout()`, `sendText()` or any of the Canvas methods. Other methods can be called without having control. See [javadoc](https://vuzix.github.io/ultralite-sdk-android/javadoc) for more information.
