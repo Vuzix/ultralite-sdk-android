@@ -3,6 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.vuzix</groupId>
   <artifactId>ultralite-sdk-android</artifactId>
+  <name>Vuzix/ultralite-sdk-android</name>
   <version>unspecified</version>
   <packaging>aar</packaging>
   <dependencies>
@@ -12,4 +13,22 @@
       <version>1.6.1</version>
     </dependency>
   </dependencies>
+  <inceptionYear>2023</inceptionYear>
+  <organization>
+      <name>Vuzix Corporation</name>
+      <url>https://www.vuzix.com</url>
+  </organization>
+  <licenses>
+      <license>
+          <name>VUZIX® SOFTWARE DEVELOPMENT KIT LICENSE AND CONFIDENTIALITY AGREEMENT</name>
+          <url>https://www.vuzix.com/pages/vuzix%C2%AE-software-development-kit-license-and-confidentiality-agreement</url>
+          <distribution>repo</distribution>
+      </license>
+  </licenses>
+  <url>https://vuzix.github.io/ultralite-sdk-android/</url>
+  <scm>
+      <connection>scm:git://github.com/Vuzix/ultralite-sdk-android.git</connection>
+      <developerConnection>scm:git://github.com/Vuzix/ultralite-sdk-android.git</developerConnection>
+      <url>git://github.com/Vuzix/ultralite-sdk-android.git</url>
+  </scm>
 </project>
