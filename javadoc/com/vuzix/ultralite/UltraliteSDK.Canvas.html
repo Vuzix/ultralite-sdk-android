@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -169,6 +169,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clearBackground(com.vuzix.ultralite.UltraliteColor)">clearBackground</a></span>&#8203;(<a href="UltraliteColor.html" title="enum in com.vuzix.ultralite">UltraliteColor</a>&nbsp;color)</code></th>
+<td class="colLast">
+<div class="block">Clears the entire background layer to the specified color.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clearBackgroundRect(int,int,int,int)">clearBackgroundRect</a></span>&#8203;(int&nbsp;x,
                    int&nbsp;y,
                    int&nbsp;width,
@@ -177,14 +184,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Clears a specific area of the background layer.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clearBackgroundRect(int,int,int,int,com.vuzix.ultralite.UltraliteColor)">clearBackgroundRect</a></span>&#8203;(int&nbsp;x,
+                   int&nbsp;y,
+                   int&nbsp;width,
+                   int&nbsp;height,
+                   <a href="UltraliteColor.html" title="enum in com.vuzix.ultralite">UltraliteColor</a>&nbsp;color)</code></th>
+<td class="colLast">
+<div class="block">Clears a specific area of the background layer to the specified color.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#commitText()">commitText</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Commits text changes made since the last commit.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createAnimation(com.vuzix.ultralite.LVGLImage%5B%5D,com.vuzix.ultralite.Anchor,int)">createAnimation</a></span>&#8203;(<a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>[]&nbsp;images,
                <a href="Anchor.html" title="enum in com.vuzix.ultralite">Anchor</a>&nbsp;anchor,
@@ -193,7 +211,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Creates an animation out of an array of images.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createAnimation(com.vuzix.ultralite.LVGLImage%5B%5D,com.vuzix.ultralite.Anchor,int,int,int)">createAnimation</a></span>&#8203;(<a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>[]&nbsp;images,
                <a href="Anchor.html" title="enum in com.vuzix.ultralite">Anchor</a>&nbsp;anchor,
@@ -204,7 +222,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Creates an animation out of an array of images.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createImage(com.vuzix.ultralite.LVGLImage,com.vuzix.ultralite.Anchor)">createImage</a></span>&#8203;(<a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>&nbsp;image,
            <a href="Anchor.html" title="enum in com.vuzix.ultralite">Anchor</a>&nbsp;anchor)</code></th>
@@ -212,7 +230,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Creates an identifiable image that can be manipulated.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createImage(com.vuzix.ultralite.LVGLImage,com.vuzix.ultralite.Anchor,boolean)">createImage</a></span>&#8203;(<a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>&nbsp;image,
            <a href="Anchor.html" title="enum in com.vuzix.ultralite">Anchor</a>&nbsp;anchor,
@@ -221,7 +239,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Creates an identifiable image that can be manipulated.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createImage(com.vuzix.ultralite.LVGLImage,com.vuzix.ultralite.Anchor,int,int,boolean)">createImage</a></span>&#8203;(<a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>&nbsp;image,
            <a href="Anchor.html" title="enum in com.vuzix.ultralite">Anchor</a>&nbsp;anchor,
@@ -232,7 +250,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Creates an identifiable image that can be manipulated.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createText(java.lang.String,com.vuzix.ultralite.Anchor)">createText</a></span>&#8203;(java.lang.String&nbsp;text,
           <a href="Anchor.html" title="enum in com.vuzix.ultralite">Anchor</a>&nbsp;anchor)</code></th>
@@ -240,31 +258,34 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Creates an identifiable block of text that can be manipulated.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createText(java.lang.String,com.vuzix.ultralite.TextAlignment,com.vuzix.ultralite.TextColor,com.vuzix.ultralite.Anchor,boolean)">createText</a></span>&#8203;(java.lang.String&nbsp;text,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createText(java.lang.String,com.vuzix.ultralite.TextAlignment,com.vuzix.ultralite.UltraliteColor,com.vuzix.ultralite.Anchor,boolean)">createText</a></span>&#8203;(java.lang.String&nbsp;text,
           <a href="TextAlignment.html" title="enum in com.vuzix.ultralite">TextAlignment</a>&nbsp;alignment,
-          <a href="TextColor.html" title="enum in com.vuzix.ultralite">TextColor</a>&nbsp;color,
+          <a href="UltraliteColor.html" title="enum in com.vuzix.ultralite">UltraliteColor</a>&nbsp;color,
           <a href="Anchor.html" title="enum in com.vuzix.ultralite">Anchor</a>&nbsp;anchor,
           boolean&nbsp;visible)</code></th>
 <td class="colLast">
 <div class="block">Creates an identifiable block of text that can be manipulated.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createText(java.lang.String,com.vuzix.ultralite.TextAlignment,com.vuzix.ultralite.TextColor,com.vuzix.ultralite.Anchor,int,int,boolean)">createText</a></span>&#8203;(java.lang.String&nbsp;text,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createText(java.lang.String,com.vuzix.ultralite.TextAlignment,com.vuzix.ultralite.UltraliteColor,com.vuzix.ultralite.Anchor,int,int,int,int,com.vuzix.ultralite.TextWrapMode,boolean)">createText</a></span>&#8203;(java.lang.String&nbsp;text,
           <a href="TextAlignment.html" title="enum in com.vuzix.ultralite">TextAlignment</a>&nbsp;alignment,
-          <a href="TextColor.html" title="enum in com.vuzix.ultralite">TextColor</a>&nbsp;color,
+          <a href="UltraliteColor.html" title="enum in com.vuzix.ultralite">UltraliteColor</a>&nbsp;color,
           <a href="Anchor.html" title="enum in com.vuzix.ultralite">Anchor</a>&nbsp;anchor,
           int&nbsp;offsetX,
           int&nbsp;offsetY,
+          int&nbsp;width,
+          int&nbsp;height,
+          <a href="TextWrapMode.html" title="enum in com.vuzix.ultralite">TextWrapMode</a>&nbsp;wrap,
           boolean&nbsp;visible)</code></th>
 <td class="colLast">
 <div class="block">Creates an identifiable block of text that can be manipulated.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#drawBackground(android.graphics.Bitmap,int,int)">drawBackground</a></span>&#8203;(android.graphics.Bitmap&nbsp;bitmap,
               int&nbsp;x,
@@ -273,7 +294,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Draws the provided bitmap in the background layer at the specified coordinates.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#moveAnimation(int,int,int)">moveAnimation</a></span>&#8203;(int&nbsp;id,
              int&nbsp;x,
@@ -282,7 +303,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Moves an animation to a new absolute location on screen.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#moveImage(int,int,int)">moveImage</a></span>&#8203;(int&nbsp;id,
          int&nbsp;x,
@@ -291,7 +312,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Moves an image to a new absolute location on screen.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#moveText(int,com.vuzix.ultralite.Anchor,int,int)">moveText</a></span>&#8203;(int&nbsp;id,
         <a href="Anchor.html" title="enum in com.vuzix.ultralite">Anchor</a>&nbsp;anchor,
@@ -301,28 +322,28 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Moves text to a new location.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeAnimation(int)">removeAnimation</a></span>&#8203;(int&nbsp;id)</code></th>
 <td class="colLast">
 <div class="block">Removes a previously created animation.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeImage(int)">removeImage</a></span>&#8203;(int&nbsp;id)</code></th>
 <td class="colLast">
 <div class="block">Removes a previously created image.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeText(int)">removeText</a></span>&#8203;(int&nbsp;id)</code></th>
 <td class="colLast">
 <div class="block">Removes a previously created text block.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAnimationVisible(int,boolean)">setAnimationVisible</a></span>&#8203;(int&nbsp;id,
                    boolean&nbsp;visible)</code></th>
@@ -330,7 +351,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Changes visibility of an animation.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setImageVisible(int,boolean)">setImageVisible</a></span>&#8203;(int&nbsp;id,
                boolean&nbsp;visible)</code></th>
@@ -338,7 +359,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Changes visibility of an image.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTextVisible(int,boolean)">setTextVisible</a></span>&#8203;(int&nbsp;id,
               boolean&nbsp;visible)</code></th>
@@ -346,7 +367,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Changes visibility of text.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#updateImage(int,com.vuzix.ultralite.LVGLImage)">updateImage</a></span>&#8203;(int&nbsp;id,
            <a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>&nbsp;image)</code></th>
@@ -354,7 +375,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Replaces the image displayed with a particular id.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#updateText(int,java.lang.String)">updateText</a></span>&#8203;(int&nbsp;id,
           java.lang.String&nbsp;text)</code></th>
@@ -412,6 +433,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Clears the entire background layer.</div>
 </li>
 </ul>
+<a id="clearBackground(com.vuzix.ultralite.UltraliteColor)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clearBackground</h4>
+<pre class="methodSignature">void&nbsp;clearBackground&#8203;(@NonNull
+                     <a href="UltraliteColor.html" title="enum in com.vuzix.ultralite">UltraliteColor</a>&nbsp;color)</pre>
+<div class="block">Clears the entire background layer to the specified color.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>color</code> - the color to paint on the background</dd>
+</dl>
+</li>
+</ul>
 <a id="clearBackgroundRect(int,int,int,int)">
 <!--   -->
 </a>
@@ -429,6 +465,29 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>y</code> - starting y location to clear</dd>
 <dd><code>width</code> - amount of horizontal space to clear</dd>
 <dd><code>height</code> - amount of vertical space to clear</dd>
+</dl>
+</li>
+</ul>
+<a id="clearBackgroundRect(int,int,int,int,com.vuzix.ultralite.UltraliteColor)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clearBackgroundRect</h4>
+<pre class="methodSignature">void&nbsp;clearBackgroundRect&#8203;(int&nbsp;x,
+                         int&nbsp;y,
+                         int&nbsp;width,
+                         int&nbsp;height,
+                         @NonNull
+                         <a href="UltraliteColor.html" title="enum in com.vuzix.ultralite">UltraliteColor</a>&nbsp;color)</pre>
+<div class="block">Clears a specific area of the background layer to the specified color.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>x</code> - starting x location to clear</dd>
+<dd><code>y</code> - starting y location to clear</dd>
+<dd><code>width</code> - amount of horizontal space to clear</dd>
+<dd><code>height</code> - amount of vertical space to clear</dd>
+<dd><code>color</code> - the color to paint on the background</dd>
 </dl>
 </li>
 </ul>
@@ -737,7 +796,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="createText(java.lang.String,com.vuzix.ultralite.TextAlignment,com.vuzix.ultralite.TextColor,com.vuzix.ultralite.Anchor,boolean)">
+<a id="createText(java.lang.String,com.vuzix.ultralite.TextAlignment,com.vuzix.ultralite.UltraliteColor,com.vuzix.ultralite.Anchor,boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -748,7 +807,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
                @NonNull
                <a href="TextAlignment.html" title="enum in com.vuzix.ultralite">TextAlignment</a>&nbsp;alignment,
                @NonNull
-               <a href="TextColor.html" title="enum in com.vuzix.ultralite">TextColor</a>&nbsp;color,
+               <a href="UltraliteColor.html" title="enum in com.vuzix.ultralite">UltraliteColor</a>&nbsp;color,
                @NonNull
                <a href="Anchor.html" title="enum in com.vuzix.ultralite">Anchor</a>&nbsp;anchor,
                boolean&nbsp;visible)</pre>
@@ -769,7 +828,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="createText(java.lang.String,com.vuzix.ultralite.TextAlignment,com.vuzix.ultralite.TextColor,com.vuzix.ultralite.Anchor,int,int,boolean)">
+<a id="createText(java.lang.String,com.vuzix.ultralite.TextAlignment,com.vuzix.ultralite.UltraliteColor,com.vuzix.ultralite.Anchor,int,int,int,int,com.vuzix.ultralite.TextWrapMode,boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -780,11 +839,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
                @NonNull
                <a href="TextAlignment.html" title="enum in com.vuzix.ultralite">TextAlignment</a>&nbsp;alignment,
                @NonNull
-               <a href="TextColor.html" title="enum in com.vuzix.ultralite">TextColor</a>&nbsp;color,
+               <a href="UltraliteColor.html" title="enum in com.vuzix.ultralite">UltraliteColor</a>&nbsp;color,
                @NonNull
                <a href="Anchor.html" title="enum in com.vuzix.ultralite">Anchor</a>&nbsp;anchor,
                int&nbsp;offsetX,
                int&nbsp;offsetY,
+               int&nbsp;width,
+               int&nbsp;height,
+               @Nullable
+               <a href="TextWrapMode.html" title="enum in com.vuzix.ultralite">TextWrapMode</a>&nbsp;wrap,
                boolean&nbsp;visible)</pre>
 <div class="block">Creates an identifiable block of text that can be manipulated. You must call commitText()
  after calling this method.
@@ -799,6 +862,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>anchor</code> - where to Anchor the text</dd>
 <dd><code>offsetX</code> - the horizontal offset</dd>
 <dd><code>offsetY</code> - the vertical offset</dd>
+<dd><code>width</code> - the width of the text block, use -1 for auto</dd>
+<dd><code>height</code> - the height of the text block, use -1 for auto</dd>
+<dd><code>wrap</code> - the desired wrapping mode, null specifies no wrap mode</dd>
 <dd><code>visible</code> - initial visibility of the text</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>an int that can be used to update the text or -1 if the text can't be created</dd>
