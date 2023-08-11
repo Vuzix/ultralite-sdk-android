@@ -9,10 +9,13 @@ Use this library to send content from your app to any pair of smart glasses made
 ## Getting Started
 1. Add JitPack as a maven repository in settings.gradle or settings.gradle.kts at the top level of your Android Studio project:
 ```
-repositories {
-    ...
-    maven { url "https://jitpack.io" } // if using settings.gradle
-    maven ("https://jitpack.io") // if using settings.gradle.kts
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        ...
+        maven { url "https://jitpack.io" } // if using settings.gradle
+        maven ("https://jitpack.io") // if using settings.gradle.kts
+    }
 }
 ```
 2. Add ultralite-sdk-android to your module's build.gradle or build.gradle.kts file. Replace VERSION below with the version of the SDK you wish to use. The latest version is [![](https://jitpack.io/v/com.vuzix/ultralite-sdk-android.svg)](https://jitpack.io/#com.vuzix/ultralite-sdk-android).
