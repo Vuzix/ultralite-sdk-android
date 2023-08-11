@@ -11,8 +11,8 @@ Use this library to send content from your app to any pair of smart glasses made
 ```
 repositories {
     ...
-    maven { url "https://jitpack.io" } // if using build.gradle
-    maven ("https://jitpack.io") // if using build.gradle.kts
+    maven { url "https://jitpack.io" } // if using settings.gradle
+    maven ("https://jitpack.io") // if using settings.gradle.kts
 }
 ```
 2. Add ultralite-sdk-android to your module's build.gradle or build.gradle.kts file. Replace VERSION below with the version of the SDK you wish to use. The latest version is [![](https://jitpack.io/v/com.vuzix/ultralite-sdk-android.svg)](https://jitpack.io/#com.vuzix/ultralite-sdk-android).
