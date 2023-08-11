@@ -7,18 +7,20 @@ Use this library to send content from your app to any pair of smart glasses made
 - Android device running Andorid 12 or later
 - [Vuzix OEM Platform](https://play.google.com/store/apps/details?id=com.vuzix.ultralite.app) app installed
 ## Getting Started
-1. Add JitPack as a maven repository in settings.gradle at the top level of your Android Studio project:
+1. Add JitPack as a maven repository in settings.gradle or settings.gradle.kts at the top level of your Android Studio project:
 ```
 repositories {
     ...
-    maven { url "https://jitpack.io" }
+    maven { url "https://jitpack.io" } // if using build.gradle
+    maven ("https://jitpack.io") // if using build.gradle.kts
 }
 ```
-2. Add ultralite-sdk-android to your module's build.gradle file. Replace VERSION below with the version of the SDK you wish to use. The latest version is [![](https://jitpack.io/v/com.vuzix/ultralite-sdk-android.svg)](https://jitpack.io/#com.vuzix/ultralite-sdk-android).
+2. Add ultralite-sdk-android to your module's build.gradle or build.gradle.kts file. Replace VERSION below with the version of the SDK you wish to use. The latest version is [![](https://jitpack.io/v/com.vuzix/ultralite-sdk-android.svg)](https://jitpack.io/#com.vuzix/ultralite-sdk-android).
 ```
 dependencies {
     ...
-    implementation 'com.vuzix:ultralite-sdk-android:VERSION'
+    implementation 'com.vuzix:ultralite-sdk-android:VERSION' // if using build.gradle
+    implementation ("com.vuzix:ultralite-sdk-android:VERSION") // if using build.gradle.kts
     ...
 }
 ```
