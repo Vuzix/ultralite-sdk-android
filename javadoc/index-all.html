@@ -66,6 +66,10 @@ loadScripts(document, 'script');</script>
 </dl>
 <h2 class="title" id="I:B">B</h2>
 <dl class="index">
+<dt><a href="com/vuzix/ultralite/BatteryStatus.html" class="type-name-link" title="interface in com.vuzix.ultralite">BatteryStatus</a> - Interface in <a href="com/vuzix/ultralite/package-summary.html">com.vuzix.ultralite</a></dt>
+<dd>
+<div class="block">Represents the current battery status of the Ultralite.</div>
+</dd>
 <dt><a href="com/vuzix/ultralite/UltraliteColor.html#BLACK" class="member-name-link">BLACK</a> - Enum constant in enum class com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteColor.html" title="enum class in com.vuzix.ultralite">UltraliteColor</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/vuzix/ultralite/LVGLImage.ColorMapper.html#BLACK" class="member-name-link">BLACK</a> - Static variable in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/LVGLImage.ColorMapper.html" title="interface in com.vuzix.ultralite">LVGLImage.ColorMapper</a></dt>
@@ -216,6 +220,14 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns the SDK availability as a LiveData that can be observed.</div>
 </dd>
+<dt><a href="com/vuzix/ultralite/UltraliteSDK.html#getBatteryLevel()" class="member-name-link">getBatteryLevel()</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.html" title="interface in com.vuzix.ultralite">UltraliteSDK</a></dt>
+<dd>
+<div class="block">Returns the current battery level of the glasses or zero if not connected.</div>
+</dd>
+<dt><a href="com/vuzix/ultralite/UltraliteSDK.html#getBatteryStatus()" class="member-name-link">getBatteryStatus()</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.html" title="interface in com.vuzix.ultralite">UltraliteSDK</a></dt>
+<dd>
+<div class="block">Returns the battery status as a LiveData that can be observed.</div>
+</dd>
 <dt><a href="com/vuzix/ultralite/UltraliteSDK.html#getCanvas()" class="member-name-link">getCanvas()</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.html" title="interface in com.vuzix.ultralite">UltraliteSDK</a></dt>
 <dd>
 <div class="block">Returns a Canvas object that can be used to draw directly to the Ultralite screen.</div>
@@ -246,6 +258,10 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="com/vuzix/ultralite/Layout.html#getJsonTag()" class="member-name-link">getJsonTag()</a> - Method in enum class com.vuzix.ultralite.<a href="com/vuzix/ultralite/Layout.html" title="enum class in com.vuzix.ultralite">Layout</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/vuzix/ultralite/BatteryStatus.html#getLevel()" class="member-name-link">getLevel()</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/BatteryStatus.html" title="interface in com.vuzix.ultralite">BatteryStatus</a></dt>
+<dd>
+<div class="block">Current battery level, from 0-100.</div>
+</dd>
 <dt><a href="com/vuzix/ultralite/UltraliteSDK.html#getLinked()" class="member-name-link">getLinked()</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.html" title="interface in com.vuzix.ultralite">UltraliteSDK</a></dt>
 <dd>
 <div class="block">Returns the link status as a LiveData that can be observed.</div>
@@ -268,6 +284,14 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/vuzix/ultralite/UltraliteSDK.html#isAvailable()" class="member-name-link">isAvailable()</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.html" title="interface in com.vuzix.ultralite">UltraliteSDK</a></dt>
 <dd>
 <div class="block">Determines if the SDK is currently available for use.</div>
+</dd>
+<dt><a href="com/vuzix/ultralite/BatteryStatus.html#isCharging()" class="member-name-link">isCharging()</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/BatteryStatus.html" title="interface in com.vuzix.ultralite">BatteryStatus</a></dt>
+<dd>
+<div class="block">Charging status.</div>
+</dd>
+<dt><a href="com/vuzix/ultralite/UltraliteSDK.html#isCharging()" class="member-name-link">isCharging()</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.html" title="interface in com.vuzix.ultralite">UltraliteSDK</a></dt>
+<dd>
+<div class="block">Returns true if the glasses are currently charging.</div>
 </dd>
 <dt><a href="com/vuzix/ultralite/UltraliteSDK.html#isConnected()" class="member-name-link">isConnected()</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.html" title="interface in com.vuzix.ultralite">UltraliteSDK</a></dt>
 <dd>
