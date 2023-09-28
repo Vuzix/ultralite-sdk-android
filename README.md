@@ -4,7 +4,7 @@
 Use this library to send content from your app to any pair of smart glasses made via the Vuzix Ultralite OEM Platform<sup>SM</sup>.
 
 ## Requirements
-- Android device running Andorid 12 or later
+- Android device running Android 12 or later
 - [Vuzix OEM Platform](https://play.google.com/store/apps/details?id=com.vuzix.ultralite.app) app installed
 ## Getting Started
 1. Add JitPack as a maven repository in settings.gradle or settings.gradle.kts at the top level of your Android Studio project:
