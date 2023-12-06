@@ -42,7 +42,7 @@ loadScripts(document, 'script');</script>
 <div>
 <ul class="sub-nav-list">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested-class-summary">Nested</a>&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method-summary">Method</a></li>
@@ -88,6 +88,23 @@ loadScripts(document, 'script');</script>
 </section>
 <section class="summary">
 <ul class="summary-list">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<li>
+<section class="nested-class-summary" id="nested-class-summary">
+<h2>Nested Class Summary</h2>
+<div class="caption"><span>Nested Classes</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Interface</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="UltraliteSDK.Canvas.CommitCallback.html" class="type-name-link" title="interface in com.vuzix.ultralite">UltraliteSDK.Canvas.CommitCallback</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Gets notified when a commit is complete.</div>
+</div>
+</div>
+</section>
+</li>
 <!-- ========== METHOD SUMMARY =========== -->
 <li>
 <section class="method-summary" id="method-summary">
@@ -136,61 +153,66 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Commits canvas changes made since the last commit.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createAnimation(com.vuzix.ultralite.LVGLImage%5B%5D,com.vuzix.ultralite.Anchor,int)" class="member-name-link">createAnimation</a><wbr>(<a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>[]&nbsp;images,
- <a href="Anchor.html" title="enum class in com.vuzix.ultralite">Anchor</a>&nbsp;anchor,
- int&nbsp;duration)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#commit(com.vuzix.ultralite.UltraliteSDK.Canvas.CommitCallback)" class="member-name-link">commit</a><wbr>(<a href="UltraliteSDK.Canvas.CommitCallback.html" title="interface in com.vuzix.ultralite">UltraliteSDK.Canvas.CommitCallback</a>&nbsp;callback)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Creates an animation out of an array of images.</div>
+<div class="block">Commits canvas changes made since the last commit.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createAnimation(com.vuzix.ultralite.LVGLImage%5B%5D,com.vuzix.ultralite.Anchor,int,int,int)" class="member-name-link">createAnimation</a><wbr>(<a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>[]&nbsp;images,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createAnimation(com.vuzix.ultralite.LVGLImage%5B%5D,com.vuzix.ultralite.Anchor,int)" class="member-name-link">createAnimation</a><wbr>(<a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>[]&nbsp;images,
  <a href="Anchor.html" title="enum class in com.vuzix.ultralite">Anchor</a>&nbsp;anchor,
- int&nbsp;offsetX,
- int&nbsp;offsetY,
  int&nbsp;duration)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Creates an animation out of an array of images.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createImage(com.vuzix.ultralite.LVGLImage,com.vuzix.ultralite.Anchor)" class="member-name-link">createImage</a><wbr>(<a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>&nbsp;image,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createAnimation(com.vuzix.ultralite.LVGLImage%5B%5D,com.vuzix.ultralite.Anchor,int,int,int)" class="member-name-link">createAnimation</a><wbr>(<a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>[]&nbsp;images,
+ <a href="Anchor.html" title="enum class in com.vuzix.ultralite">Anchor</a>&nbsp;anchor,
+ int&nbsp;offsetX,
+ int&nbsp;offsetY,
+ int&nbsp;duration)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Creates an animation out of an array of images.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createImage(com.vuzix.ultralite.LVGLImage,com.vuzix.ultralite.Anchor)" class="member-name-link">createImage</a><wbr>(<a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>&nbsp;image,
  <a href="Anchor.html" title="enum class in com.vuzix.ultralite">Anchor</a>&nbsp;anchor)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Creates an identifiable image that can be manipulated.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createImage(com.vuzix.ultralite.LVGLImage,com.vuzix.ultralite.Anchor,boolean)" class="member-name-link">createImage</a><wbr>(<a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>&nbsp;image,
+ <a href="Anchor.html" title="enum class in com.vuzix.ultralite">Anchor</a>&nbsp;anchor,
+ boolean&nbsp;visible)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Creates an identifiable image that can be manipulated.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createImage(com.vuzix.ultralite.LVGLImage,com.vuzix.ultralite.Anchor,boolean)" class="member-name-link">createImage</a><wbr>(<a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>&nbsp;image,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createImage(com.vuzix.ultralite.LVGLImage,com.vuzix.ultralite.Anchor,int,int,boolean)" class="member-name-link">createImage</a><wbr>(<a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>&nbsp;image,
  <a href="Anchor.html" title="enum class in com.vuzix.ultralite">Anchor</a>&nbsp;anchor,
+ int&nbsp;offsetX,
+ int&nbsp;offsetY,
  boolean&nbsp;visible)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Creates an identifiable image that can be manipulated.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createImage(com.vuzix.ultralite.LVGLImage,com.vuzix.ultralite.Anchor,int,int,boolean)" class="member-name-link">createImage</a><wbr>(<a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>&nbsp;image,
- <a href="Anchor.html" title="enum class in com.vuzix.ultralite">Anchor</a>&nbsp;anchor,
- int&nbsp;offsetX,
- int&nbsp;offsetY,
- boolean&nbsp;visible)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Creates an identifiable image that can be manipulated.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createText(java.lang.String,com.vuzix.ultralite.Anchor)" class="member-name-link">createText</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createText(java.lang.String,com.vuzix.ultralite.Anchor)" class="member-name-link">createText</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text,
  <a href="Anchor.html" title="enum class in com.vuzix.ultralite">Anchor</a>&nbsp;anchor)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Creates an identifiable block of text that can be manipulated.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createText(java.lang.String,com.vuzix.ultralite.TextAlignment,com.vuzix.ultralite.UltraliteColor,com.vuzix.ultralite.Anchor,boolean)" class="member-name-link">createText</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createText(java.lang.String,com.vuzix.ultralite.TextAlignment,com.vuzix.ultralite.UltraliteColor,com.vuzix.ultralite.Anchor,boolean)" class="member-name-link">createText</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text,
  <a href="TextAlignment.html" title="enum class in com.vuzix.ultralite">TextAlignment</a>&nbsp;alignment,
  <a href="UltraliteColor.html" title="enum class in com.vuzix.ultralite">UltraliteColor</a>&nbsp;color,
  <a href="Anchor.html" title="enum class in com.vuzix.ultralite">Anchor</a>&nbsp;anchor,
  boolean&nbsp;visible)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Creates an identifiable block of text that can be manipulated.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createText(java.lang.String,com.vuzix.ultralite.TextAlignment,com.vuzix.ultralite.UltraliteColor,com.vuzix.ultralite.Anchor,int,int,int,int,com.vuzix.ultralite.TextWrapMode,boolean)" class="member-name-link">createText</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createText(java.lang.String,com.vuzix.ultralite.TextAlignment,com.vuzix.ultralite.UltraliteColor,com.vuzix.ultralite.Anchor,int,int,int,int,com.vuzix.ultralite.TextWrapMode,boolean)" class="member-name-link">createText</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text,
  <a href="TextAlignment.html" title="enum class in com.vuzix.ultralite">TextAlignment</a>&nbsp;alignment,
  <a href="UltraliteColor.html" title="enum class in com.vuzix.ultralite">UltraliteColor</a>&nbsp;color,
  <a href="Anchor.html" title="enum class in com.vuzix.ultralite">Anchor</a>&nbsp;anchor,
@@ -200,87 +222,87 @@ loadScripts(document, 'script');</script>
  int&nbsp;height,
  <a href="TextWrapMode.html" title="enum class in com.vuzix.ultralite">TextWrapMode</a>&nbsp;wrap,
  boolean&nbsp;visible)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Creates an identifiable block of text that can be manipulated.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#drawBackground(android.graphics.Bitmap,int,int)" class="member-name-link">drawBackground</a><wbr>(android.graphics.Bitmap&nbsp;bitmap,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#drawBackground(android.graphics.Bitmap,int,int)" class="member-name-link">drawBackground</a><wbr>(android.graphics.Bitmap&nbsp;bitmap,
  int&nbsp;x,
  int&nbsp;y)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Draws the provided bitmap in the background layer at the specified coordinates.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#drawBackground(android.graphics.Bitmap,android.graphics.Point%5B%5D)" class="member-name-link">drawBackground</a><wbr>(android.graphics.Bitmap&nbsp;bitmap,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#drawBackground(android.graphics.Bitmap,android.graphics.Point%5B%5D)" class="member-name-link">drawBackground</a><wbr>(android.graphics.Bitmap&nbsp;bitmap,
  android.graphics.Point[]&nbsp;coordinates)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Draws the provided bitmap in the background layer at the specified coordinate pairs.</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#moveAnimation(int,int,int)" class="member-name-link">moveAnimation</a><wbr>(int&nbsp;id,
+ int&nbsp;x,
+ int&nbsp;y)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Moves an animation to a new absolute location on screen.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#moveAnimation(int,int,int)" class="member-name-link">moveAnimation</a><wbr>(int&nbsp;id,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#moveImage(int,int,int)" class="member-name-link">moveImage</a><wbr>(int&nbsp;id,
  int&nbsp;x,
  int&nbsp;y)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Moves an animation to a new absolute location on screen.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#moveImage(int,int,int)" class="member-name-link">moveImage</a><wbr>(int&nbsp;id,
- int&nbsp;x,
- int&nbsp;y)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Moves an image to a new absolute location on screen.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#moveText(int,com.vuzix.ultralite.Anchor,int,int)" class="member-name-link">moveText</a><wbr>(int&nbsp;id,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#moveText(int,com.vuzix.ultralite.Anchor,int,int)" class="member-name-link">moveText</a><wbr>(int&nbsp;id,
  <a href="Anchor.html" title="enum class in com.vuzix.ultralite">Anchor</a>&nbsp;anchor,
  int&nbsp;offsetX,
  int&nbsp;offsetY)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Moves text to a new location.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#removeAnimation(int)" class="member-name-link">removeAnimation</a><wbr>(int&nbsp;id)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#removeAnimation(int)" class="member-name-link">removeAnimation</a><wbr>(int&nbsp;id)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Removes a previously created animation.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#removeImage(int)" class="member-name-link">removeImage</a><wbr>(int&nbsp;id)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#removeImage(int)" class="member-name-link">removeImage</a><wbr>(int&nbsp;id)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Removes a previously created image.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#removeText(int)" class="member-name-link">removeText</a><wbr>(int&nbsp;id)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#removeText(int)" class="member-name-link">removeText</a><wbr>(int&nbsp;id)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Removes a previously created text block.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setAnimationVisible(int,boolean)" class="member-name-link">setAnimationVisible</a><wbr>(int&nbsp;id,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setAnimationVisible(int,boolean)" class="member-name-link">setAnimationVisible</a><wbr>(int&nbsp;id,
  boolean&nbsp;visible)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Changes visibility of an animation.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setImageVisible(int,boolean)" class="member-name-link">setImageVisible</a><wbr>(int&nbsp;id,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setImageVisible(int,boolean)" class="member-name-link">setImageVisible</a><wbr>(int&nbsp;id,
  boolean&nbsp;visible)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Changes visibility of an image.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setTextVisible(int,boolean)" class="member-name-link">setTextVisible</a><wbr>(int&nbsp;id,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setTextVisible(int,boolean)" class="member-name-link">setTextVisible</a><wbr>(int&nbsp;id,
  boolean&nbsp;visible)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Changes visibility of text.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#updateImage(int,com.vuzix.ultralite.LVGLImage)" class="member-name-link">updateImage</a><wbr>(int&nbsp;id,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#updateImage(int,com.vuzix.ultralite.LVGLImage)" class="member-name-link">updateImage</a><wbr>(int&nbsp;id,
  <a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>&nbsp;image)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Replaces the image displayed with a particular id.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#updateText(int,java.lang.String)" class="member-name-link">updateText</a><wbr>(int&nbsp;id,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#updateText(int,java.lang.String)" class="member-name-link">updateText</a><wbr>(int&nbsp;id,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Replaces the text displayed with a particular id.</div>
 </div>
 </div>
@@ -366,8 +388,8 @@ loadScripts(document, 'script');</script>
 <dt>Parameters:</dt>
 <dd><code>x</code> - starting x location to clear</dd>
 <dd><code>y</code> - starting y location to clear</dd>
-<dd><code>width</code> - amount of horizontal space to clear</dd>
-<dd><code>height</code> - amount of vertical space to clear</dd>
+<dd><code>width</code> - amount of horizontal space to clear (must be greater than zero)</dd>
+<dd><code>height</code> - amount of vertical space to clear (must be greater than zero)</dd>
 </dl>
 </section>
 </li>
@@ -385,8 +407,8 @@ loadScripts(document, 'script');</script>
 <dt>Parameters:</dt>
 <dd><code>x</code> - starting x location to clear</dd>
 <dd><code>y</code> - starting y location to clear</dd>
-<dd><code>width</code> - amount of horizontal space to clear</dd>
-<dd><code>height</code> - amount of vertical space to clear</dd>
+<dd><code>width</code> - amount of horizontal space to clear (must be greater than zero)</dd>
+<dd><code>height</code> - amount of vertical space to clear (must be greater than zero)</dd>
 <dd><code>color</code> - the color to paint on the background</dd>
 </dl>
 </section>
@@ -396,6 +418,7 @@ loadScripts(document, 'script');</script>
 <h3>createImage</h3>
 <div class="member-signature"><span class="return-type">int</span>&nbsp;<span class="element-name">createImage</span><wbr><span class="parameters">(@NonNull
  <a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>&nbsp;image,
+ @NonNull
  <a href="Anchor.html" title="enum class in com.vuzix.ultralite">Anchor</a>&nbsp;anchor)</span></div>
 <div class="block">Creates an identifiable image that can be manipulated. The image will initially be
  visible.
@@ -553,7 +576,8 @@ loadScripts(document, 'script');</script>
 <dt>Parameters:</dt>
 <dd><code>images</code> - an array of images</dd>
 <dd><code>anchor</code> - where to anchor the animation</dd>
-<dd><code>duration</code> - the duration, in milliseconds, of the entire animation</dd>
+<dd><code>duration</code> - the duration, in milliseconds, of the entire animation (must be greater
+                 than zero)</dd>
 <dt>Returns:</dt>
 <dd>an int that can be used to update the animation or -1 if the animation can't be created</dd>
 </dl>
@@ -581,7 +605,8 @@ loadScripts(document, 'script');</script>
 <dd><code>anchor</code> - where to anchor the animation</dd>
 <dd><code>offsetX</code> - the horizontal offset</dd>
 <dd><code>offsetY</code> - the vertical offset</dd>
-<dd><code>duration</code> - the duration, in milliseconds, of the entire animation</dd>
+<dd><code>duration</code> - the duration, in milliseconds, of the entire animation (must be greater
+                 than zero)</dd>
 <dt>Returns:</dt>
 <dd>an int that can be used to update the animation or -1 if the animation can't be created</dd>
 </dl>
@@ -794,6 +819,17 @@ loadScripts(document, 'script');</script>
 <h3>commit</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">commit</span>()</div>
 <div class="block">Commits canvas changes made since the last commit.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="commit(com.vuzix.ultralite.UltraliteSDK.Canvas.CommitCallback)">
+<h3>commit</h3>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">commit</span><wbr><span class="parameters">(<a href="UltraliteSDK.Canvas.CommitCallback.html" title="interface in com.vuzix.ultralite">UltraliteSDK.Canvas.CommitCallback</a>&nbsp;callback)</span></div>
+<div class="block">Commits canvas changes made since the last commit.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>callback</code> - callback to be notified when the commit is complete</dd>
+</dl>
 </section>
 </li>
 <li>
