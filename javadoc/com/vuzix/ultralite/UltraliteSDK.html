@@ -31,9 +31,11 @@ loadScripts(document, 'script');</script>
 <div class="top-nav" id="navbar-top">
 <div class="skip-nav"><a href="#skip-navbar-top" title="Skip navigation links">Skip navigation links</a></div>
 <ul id="navbar-top-firstrow" class="nav-list" title="Navigation">
+<li><a href="../../../index.html">Overview</a></li>
 <li><a href="package-summary.html">Package</a></li>
 <li class="nav-bar-cell1-rev">Class</li>
 <li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
 <li><a href="../../../index-all.html">Index</a></li>
 <li><a href="../../../help-doc.html#class">Help</a></li>
 </ul>
@@ -111,6 +113,11 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color">
 <div class="block">Canvas is used to perform direct drawing operations to the Ultralite display.</div>
 </div>
+<div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="UltraliteSDK.ScrollingTextView.html" class="type-name-link" title="interface in com.vuzix.ultralite">UltraliteSDK.ScrollingTextView</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">ScrollingTextView is used to perform optimized text drawing to the Ultralite display.</div>
+</div>
 </div>
 </section>
 </li>
@@ -180,15 +187,26 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns this app's control status as a LiveData that can be observed.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>androidx.lifecycle.LiveData&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getLinked()" class="member-name-link">getLinked</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Layout.html" title="enum class in com.vuzix.ultralite">Layout</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getLayout()" class="member-name-link">getLayout</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Get the current layout.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>androidx.lifecycle.LiveData&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getLinked()" class="member-name-link">getLinked</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns the link status as a LiveData that can be observed.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getName()" class="member-name-link">getName</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getName()" class="member-name-link">getName</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns the name of the linked pair of glasses.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="UltraliteSDK.ScrollingTextView.html" title="interface in com.vuzix.ultralite">UltraliteSDK.ScrollingTextView</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getScrollingTextView()" class="member-name-link">getScrollingTextView</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns a ScrollingTextView object that can be used to draw optimized text to the Ultralite
+ screen.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isAvailable()" class="member-name-link">isAvailable</a>()</code></div>
@@ -251,20 +269,6 @@ loadScripts(document, 'script');</script>
 <div class="block">Explicitly turn the screen on.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#scrollAction(com.vuzix.ultralite.ScrollViewCommand)" class="member-name-link">scrollAction</a><wbr>(<a href="ScrollViewCommand.html" title="enum class in com.vuzix.ultralite">ScrollViewCommand</a>&nbsp;action)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">After requesting control to SCROLL layout and populating with image data, this sends an
- explicit control to the buffer behavior.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#scrollLayoutConfig(int,int,int,boolean)" class="member-name-link">scrollLayoutConfig</a><wbr>(int&nbsp;sliceHeight,
- int&nbsp;numSlicesVisible,
- int&nbsp;animationDurationMs,
- boolean&nbsp;autoScroll)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">After requesting control to SCROLL layout, this must be called to configure the image slices.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sendIcon(com.vuzix.ultralite.LVGLImage)" class="member-name-link">sendIcon</a><wbr>(<a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>&nbsp;icon)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Sends an icon to the glasses.</div>
@@ -291,51 +295,43 @@ loadScripts(document, 'script');</script>
 <div class="block">Sends a notification to the glasses for display with an optional icon.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sendScrollImage(com.vuzix.ultralite.LVGLImage,int,boolean)" class="member-name-link">sendScrollImage</a><wbr>(<a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>&nbsp;image,
- int&nbsp;slicePosition,
- boolean&nbsp;scrollFirst)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sendText(java.lang.String)" class="member-name-link">sendText</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">After sending scrollLayoutConfig, this will set the screen content according to those
-  configured parameters.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sendText(java.lang.String)" class="member-name-link">sendText</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Sends the specified text to the glasses for display.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sendText(java.lang.String,com.vuzix.ultralite.Icon)" class="member-name-link">sendText</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sendText(java.lang.String,com.vuzix.ultralite.Icon)" class="member-name-link">sendText</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text,
  <a href="Icon.html" title="enum class in com.vuzix.ultralite">Icon</a>&nbsp;icon)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Sends the specified text and icon to the glasses for display.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setFont(java.lang.String,int,int)" class="member-name-link">setFont</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;fontFamily,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setFont(java.lang.String,int,int)" class="member-name-link">setFont</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;fontFamily,
  int&nbsp;style,
  int&nbsp;textSize)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Sets the font used on the glasses.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setLayout(com.vuzix.ultralite.Layout,int)" class="member-name-link">setLayout</a><wbr>(<a href="Layout.html" title="enum class in com.vuzix.ultralite">Layout</a>&nbsp;layout,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setLayout(com.vuzix.ultralite.Layout,int)" class="member-name-link">setLayout</a><wbr>(<a href="Layout.html" title="enum class in com.vuzix.ultralite">Layout</a>&nbsp;layout,
  int&nbsp;timeout)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Requests the specified layout and display timeout with a status bar displayed.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setLayout(com.vuzix.ultralite.Layout,int,boolean)" class="member-name-link">setLayout</a><wbr>(<a href="Layout.html" title="enum class in com.vuzix.ultralite">Layout</a>&nbsp;layout,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setLayout(com.vuzix.ultralite.Layout,int,boolean)" class="member-name-link">setLayout</a><wbr>(<a href="Layout.html" title="enum class in com.vuzix.ultralite">Layout</a>&nbsp;layout,
  int&nbsp;timeout,
  boolean&nbsp;hideStatusBar)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Requests the specified layout, display timeout and hidden status bar if desired.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setLayout(com.vuzix.ultralite.Layout,int,boolean,boolean,int)" class="member-name-link">setLayout</a><wbr>(<a href="Layout.html" title="enum class in com.vuzix.ultralite">Layout</a>&nbsp;layout,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setLayout(com.vuzix.ultralite.Layout,int,boolean,boolean,int)" class="member-name-link">setLayout</a><wbr>(<a href="Layout.html" title="enum class in com.vuzix.ultralite">Layout</a>&nbsp;layout,
  int&nbsp;timeout,
  boolean&nbsp;hideStatusBar,
  boolean&nbsp;showTapAnimation,
  int&nbsp;maxNumTaps)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Requests the specified layout, timeout and hidden status bar if desired.</div>
 </div>
 </div>
@@ -627,6 +623,18 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="getLayout()">
+<h3>getLayout</h3>
+<div class="member-signature"><span class="annotations">@Nullable
+</span><span class="return-type"><a href="Layout.html" title="enum class in com.vuzix.ultralite">Layout</a></span>&nbsp;<span class="element-name">getLayout</span>()</div>
+<div class="block">Get the current layout.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>Currently active Layout</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="setFont(java.lang.String,int,int)">
 <h3>setFont</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">setFont</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;fontFamily,
@@ -791,65 +799,6 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="scrollLayoutConfig(int,int,int,boolean)">
-<h3>scrollLayoutConfig</h3>
-<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">scrollLayoutConfig</span><wbr><span class="parameters">(int&nbsp;sliceHeight,
- int&nbsp;numSlicesVisible,
- int&nbsp;animationDurationMs,
- boolean&nbsp;autoScroll)</span></div>
-<div class="block">After requesting control to SCROLL layout, this must be called to configure the image slices.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>sliceHeight</code> - The number of pixels high for each slice (all slices are the same)</dd>
-<dd><code>numSlicesVisible</code> - The number of slices. Min=1. Max=(SCREEN_HEIGHT/sliceHeight). Having
-                         fewer slices shown increases the animation quality.</dd>
-<dd><code>animationDurationMs</code> - The duration in milliseconds over which we animate text moving
-                            between positions. Value 0 indicates instantaneous movement rather
-                            than animation.</dd>
-<dd><code>autoScroll</code> - True will automatically scroll every animationDurationMs</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="sendScrollImage(com.vuzix.ultralite.LVGLImage,int,boolean)">
-<h3>sendScrollImage</h3>
-<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">sendScrollImage</span><wbr><span class="parameters">(@NonNull
- <a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>&nbsp;image,
- int&nbsp;slicePosition,
- boolean&nbsp;scrollFirst)</span></div>
-<div class="block">After sending scrollLayoutConfig, this will set the screen content according to those
-  configured parameters.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>image</code> - - A image slice. Must be size SCREEN_WIDTH x sliceHeight and should contain a
-              single line of text rendered as an image.</dd>
-<dd><code>slicePosition</code> - - The position from 0 (bottom) to numSlicesVisible-1 (top) to place the
-                      image.</dd>
-<dd><code>scrollFirst</code> - - Commonly used when not configured for autoScroll. This causes the screen
-                    buffers to rotate one position prior to updating the image data. After
-                    rotating, the bottom slice (position 0) is guaranteed empty.</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="scrollAction(com.vuzix.ultralite.ScrollViewCommand)">
-<h3>scrollAction</h3>
-<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">scrollAction</span><wbr><span class="parameters">(<a href="ScrollViewCommand.html" title="enum class in com.vuzix.ultralite">ScrollViewCommand</a>&nbsp;action)</span></div>
-<div class="block">After requesting control to SCROLL layout and populating with image data, this sends an
- explicit control to the buffer behavior.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>action</code> - The action to perform</dd>
-<dt>See Also:</dt>
-<dd>
-<ul class="see-list">
-<li><a href="ScrollViewCommand.html" title="enum class in com.vuzix.ultralite"><code>ScrollViewCommand</code></a></li>
-</ul>
-</dd>
-</dl>
-</section>
-</li>
-<li>
 <section class="detail" id="addEventListener(com.vuzix.ultralite.EventListener)">
 <h3>addEventListener</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">addEventListener</span><wbr><span class="parameters">(<a href="EventListener.html" title="interface in com.vuzix.ultralite">EventListener</a>&nbsp;listener)</span></div>
@@ -893,6 +842,19 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>a Canvas object</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getScrollingTextView()">
+<h3>getScrollingTextView</h3>
+<div class="member-signature"><span class="return-type"><a href="UltraliteSDK.ScrollingTextView.html" title="interface in com.vuzix.ultralite">UltraliteSDK.ScrollingTextView</a></span>&nbsp;<span class="element-name">getScrollingTextView</span>()</div>
+<div class="block">Returns a ScrollingTextView object that can be used to draw optimized text to the Ultralite
+ screen. To use a ScrollingTextView, you must set the layout to SCROLL. This method does not
+ require glasses control, but the methods on ScrollingTextView do.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a ScrollingTextView object</dd>
 </dl>
 </section>
 </li>

@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.vuzix.ultralite"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.vuzix.ultralite"},{"l":"com.vuzix.ultralite.utils.scroll"}];updateSearchResults();

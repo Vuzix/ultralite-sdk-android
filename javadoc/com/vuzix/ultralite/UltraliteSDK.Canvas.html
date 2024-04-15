@@ -31,9 +31,11 @@ loadScripts(document, 'script');</script>
 <div class="top-nav" id="navbar-top">
 <div class="skip-nav"><a href="#skip-navbar-top" title="Skip navigation links">Skip navigation links</a></div>
 <ul id="navbar-top-firstrow" class="nav-list" title="Navigation">
+<li><a href="../../../index.html">Overview</a></li>
 <li><a href="package-summary.html">Package</a></li>
 <li class="nav-bar-cell1-rev">Class</li>
 <li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
 <li><a href="../../../index-all.html">Index</a></li>
 <li><a href="../../../help-doc.html#class">Help</a></li>
 </ul>
@@ -261,6 +263,19 @@ loadScripts(document, 'script');</script>
 <div class="block">Draws the provided bitmap in the background layer at the specified coordinate pairs.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#drawBackground(com.vuzix.ultralite.LVGLImage,int,int)" class="member-name-link">drawBackground</a><wbr>(<a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>&nbsp;image,
+ int&nbsp;x,
+ int&nbsp;y)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Draws the provided image in the background layer at the specified coordinates.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#drawBackground(com.vuzix.ultralite.LVGLImage,android.graphics.Point%5B%5D)" class="member-name-link">drawBackground</a><wbr>(<a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>&nbsp;image,
+ android.graphics.Point[]&nbsp;coordinates)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Draws the provided image in the background layer at the specified coordinate pairs.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#moveAnimation(int,int,int)" class="member-name-link">moveAnimation</a><wbr>(int&nbsp;id,
  int&nbsp;x,
  int&nbsp;y)</code></div>
@@ -435,7 +450,44 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>bitmap</code> - a bitmap</dd>
-<dd><code>coordinates</code> - an array of Point coordinate to draw</dd>
+<dd><code>coordinates</code> - an array of Point coordinate at which to draw the same image</dd>
+<dt>Returns:</dt>
+<dd>true if the bitmap was drawn on the background, false otherwise</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="drawBackground(com.vuzix.ultralite.LVGLImage,int,int)">
+<h3>drawBackground</h3>
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">drawBackground</span><wbr><span class="parameters">(@NonNull
+ <a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>&nbsp;image,
+ int&nbsp;x,
+ int&nbsp;y)</span></div>
+<div class="block">Draws the provided image in the background layer at the specified coordinates. The
+ image can be no wider than 640 and no taller than 480, otherwise nothing will be drawn.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>image</code> - an LVGLImage in color format LVGLImage.CF_INDEXED_2_BIT</dd>
+<dd><code>x</code> - the x location to draw</dd>
+<dd><code>y</code> - the y location to draw</dd>
+<dt>Returns:</dt>
+<dd>true if the bitmap was drawn on the background, false otherwise</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="drawBackground(com.vuzix.ultralite.LVGLImage,android.graphics.Point[])">
+<h3>drawBackground</h3>
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">drawBackground</span><wbr><span class="parameters">(@NonNull
+ <a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>&nbsp;image,
+ @NonNull
+ android.graphics.Point[]&nbsp;coordinates)</span></div>
+<div class="block">Draws the provided image in the background layer at the specified coordinate pairs. The
+ image can be no wider than 640 and no taller than 480, otherwise nothing will be drawn.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>image</code> - an LVGLImage in color format LVGLImage.CF_INDEXED_2_BIT</dd>
+<dd><code>coordinates</code> - an array of Point coordinate at which to draw the same image</dd>
 <dt>Returns:</dt>
 <dd>true if the bitmap was drawn on the background, false otherwise</dd>
 </dl>
