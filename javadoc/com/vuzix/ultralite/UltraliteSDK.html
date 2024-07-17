@@ -35,7 +35,6 @@ loadScripts(document, 'script');</script>
 <li><a href="package-summary.html">Package</a></li>
 <li class="nav-bar-cell1-rev">Class</li>
 <li><a href="package-tree.html">Tree</a></li>
-<li><a href="../../../deprecated-list.html">Deprecated</a></li>
 <li><a href="../../../index-all.html">Index</a></li>
 <li><a href="../../../help-doc.html#class">Help</a></li>
 </ul>
@@ -295,43 +294,52 @@ loadScripts(document, 'script');</script>
 <div class="block">Sends a notification to the glasses for display with an optional icon.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sendText(java.lang.String)" class="member-name-link">sendText</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sendNotification(java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.vuzix.ultralite.LVGLImage)" class="member-name-link">sendNotification</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;title,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;peekText,
+ <a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>&nbsp;icon)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sends a notification to the glasses for display with an optional icon.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sendText(java.lang.String)" class="member-name-link">sendText</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Sends the specified text to the glasses for display.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sendText(java.lang.String,com.vuzix.ultralite.Icon)" class="member-name-link">sendText</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sendText(java.lang.String,com.vuzix.ultralite.Icon)" class="member-name-link">sendText</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text,
  <a href="Icon.html" title="enum class in com.vuzix.ultralite">Icon</a>&nbsp;icon)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Sends the specified text and icon to the glasses for display.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setFont(java.lang.String,int,int)" class="member-name-link">setFont</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;fontFamily,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setFont(java.lang.String,int,int)" class="member-name-link">setFont</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;fontFamily,
  int&nbsp;style,
  int&nbsp;textSize)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Sets the font used on the glasses.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setLayout(com.vuzix.ultralite.Layout,int)" class="member-name-link">setLayout</a><wbr>(<a href="Layout.html" title="enum class in com.vuzix.ultralite">Layout</a>&nbsp;layout,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setLayout(com.vuzix.ultralite.Layout,int)" class="member-name-link">setLayout</a><wbr>(<a href="Layout.html" title="enum class in com.vuzix.ultralite">Layout</a>&nbsp;layout,
  int&nbsp;timeout)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Requests the specified layout and display timeout with a status bar displayed.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setLayout(com.vuzix.ultralite.Layout,int,boolean)" class="member-name-link">setLayout</a><wbr>(<a href="Layout.html" title="enum class in com.vuzix.ultralite">Layout</a>&nbsp;layout,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setLayout(com.vuzix.ultralite.Layout,int,boolean)" class="member-name-link">setLayout</a><wbr>(<a href="Layout.html" title="enum class in com.vuzix.ultralite">Layout</a>&nbsp;layout,
  int&nbsp;timeout,
  boolean&nbsp;hideStatusBar)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Requests the specified layout, display timeout and hidden status bar if desired.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setLayout(com.vuzix.ultralite.Layout,int,boolean,boolean,int)" class="member-name-link">setLayout</a><wbr>(<a href="Layout.html" title="enum class in com.vuzix.ultralite">Layout</a>&nbsp;layout,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setLayout(com.vuzix.ultralite.Layout,int,boolean,boolean,int)" class="member-name-link">setLayout</a><wbr>(<a href="Layout.html" title="enum class in com.vuzix.ultralite">Layout</a>&nbsp;layout,
  int&nbsp;timeout,
  boolean&nbsp;hideStatusBar,
  boolean&nbsp;showTapAnimation,
  int&nbsp;maxNumTaps)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Requests the specified layout, timeout and hidden status bar if desired.</div>
 </div>
 </div>
@@ -644,9 +652,15 @@ loadScripts(document, 'script');</script>
  control has not been requested successfully, this method call does nothing.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>fontFamily</code> - the desired font family, if null the default font will be used</dd>
-<dd><code>style</code> - the desired style (see style constants on Typeface class)</dd>
+<dd><code>fontFamily</code> - the desired font family of a built-in system font as defined by Typeface.create. If null the default font will be used.</dd>
+<dd><code>style</code> - the desired style as defined by Typeface.create</dd>
 <dd><code>textSize</code> - the desired text size (in pixel units, greater than zero)</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="see-list-long">
+<li><a href="https://developer.android.com/reference/android/graphics/Typeface#create(java.lang.String,%20int)">Typeface#create</a></li>
+</ul>
+</dd>
 </dl>
 </section>
 </li>
@@ -764,6 +778,37 @@ loadScripts(document, 'script');</script>
 <dd><code>key</code> - a unique key that can be used to update or clear the notification</dd>
 <dd><code>title</code> - the title of the notification</dd>
 <dd><code>message</code> - the message contents of the notification</dd>
+<dd><code>icon</code> - the notification icon to display as an LVGLImage, can be null</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="sendNotification(java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.vuzix.ultralite.LVGLImage)">
+<h3>sendNotification</h3>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">sendNotification</span><wbr><span class="parameters">(@Nullable
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+ @NonNull
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;title,
+ @NonNull
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message,
+ @Nullable
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;peekText,
+ @Nullable
+ <a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>&nbsp;icon)</span></div>
+<div class="block">Sends a notification to the glasses for display with an optional icon. If icon is null, a
+ default icon will be displayed. If a non-null key is provided, the notification can be
+ updated or cleared later on. If you don't care about updating or clearing later on, pass in
+ null for the key. If not connected, this method call does nothing.
+ <br><br>
+ Note: the notification icon may be ignored if the title and message have too many
+ non-standard characters for which a custom font needs to be compiled.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - (optional) unique key that can be used to update or clear the notification</dd>
+<dd><code>title</code> - the title of the notification</dd>
+<dd><code>message</code> - the message contents of the notification</dd>
+<dd><code>peekText</code> - (optional) Single-line title/body displayed when the message peeks instead of
+                 showing full-screen. If omitted, the title will be displayed.</dd>
 <dd><code>icon</code> - the notification icon to display as an LVGLImage, can be null</dd>
 </dl>
 </section>
