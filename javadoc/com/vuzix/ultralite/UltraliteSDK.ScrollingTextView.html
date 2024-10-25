@@ -35,6 +35,7 @@ loadScripts(document, 'script');</script>
 <li><a href="package-summary.html">Package</a></li>
 <li class="nav-bar-cell1-rev">Class</li>
 <li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
 <li><a href="../../../index-all.html">Index</a></li>
 <li><a href="../../../help-doc.html#class">Help</a></li>
 </ul>
@@ -44,13 +45,13 @@ loadScripts(document, 'script');</script>
 <ul class="sub-nav-list">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested-class-summary">Nested</a>&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field-summary">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method-summary">Method</a></li>
 </ul>
 <ul class="sub-nav-list">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field-detail">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method-detail">Method</a></li>
 </ul>
@@ -81,6 +82,10 @@ loadScripts(document, 'script');</script>
  a ScrollingTextView can be used, the Ultralite layout should be set to SCROLL. Otherwise
  ScrollingTextView methods won't do anything. Glasses control is also required for all
  ScrollingTextView methods.</div>
+<dl class="notes">
+<dt>Since:</dt>
+<dd>1.4.0</dd>
+</dl>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -102,30 +107,98 @@ loadScripts(document, 'script');</script>
 </div>
 </section>
 </li>
+<!-- =========== FIELD SUMMARY =========== -->
+<li>
+<section class="field-summary" id="field-summary">
+<h2>Field Summary</h2>
+<div class="caption"><span>Fields</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Field</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>static final int</code></div>
+<div class="col-second even-row-color"><code><a href="#MAX_NUM_SLICES" class="member-name-link">MAX_NUM_SLICES</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Maximum number of slices into which the screen can be divided using ScrollingTextView
+ Note: not all slices must be visible.</div>
+</div>
+<div class="col-first odd-row-color"><code>static final int</code></div>
+<div class="col-second odd-row-color"><code><a href="#MAX_SLICE_HEIGHT" class="member-name-link">MAX_SLICE_HEIGHT</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Maximum height of any single slice.</div>
+</div>
+<div class="col-first even-row-color"><code>static final int</code></div>
+<div class="col-second even-row-color"><code><a href="#MIN_NUM_SLICES" class="member-name-link">MIN_NUM_SLICES</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Minimum number of slices into which the screen can be divided using ScrollingTextView
+ Note: not all slices must be visible.</div>
+</div>
+<div class="col-first odd-row-color"><code>static final int</code></div>
+<div class="col-second odd-row-color"><code><a href="#MIN_SLICE_HEIGHT" class="member-name-link">MIN_SLICE_HEIGHT</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Minimum height of any single slice.</div>
+</div>
+</div>
+</section>
+</li>
 <!-- ========== METHOD SUMMARY =========== -->
 <li>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button><button id="method-summary-table-tab6" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab6', 3)" class="table-tab">Deprecated Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel">
 <div class="summary-table three-column-summary" aria-labelledby="method-summary-table-tab0">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#scrollAction(com.vuzix.ultralite.UltraliteSDK.ScrollingTextView.ScrollViewCommand)" class="member-name-link">scrollAction</a><wbr>(<a href="UltraliteSDK.ScrollingTextView.ScrollViewCommand.html" title="enum class in com.vuzix.ultralite">UltraliteSDK.ScrollingTextView.ScrollViewCommand</a>&nbsp;action)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#clear()" class="member-name-link">clear</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">After requesting control to SCROLL layout and populating with image data, this sends an
- explicit control to the buffer behavior.</div>
+<div class="block">After requesting control to SCROLL layout and populating with image data, this removes all
+ content from the screen.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#scrollLayoutConfig(int,int,int,boolean)" class="member-name-link">scrollLayoutConfig</a><wbr>(int&nbsp;sliceHeight,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#clear(int)" class="member-name-link">clear</a><wbr>(int&nbsp;slicePosition)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">After requesting control to SCROLL layout and populating with image data, this removes one
+ selected slice from the screen.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="#scrollAction(com.vuzix.ultralite.UltraliteSDK.ScrollingTextView.ScrollViewCommand)" class="member-name-link">scrollAction</a><wbr>(<a href="UltraliteSDK.ScrollingTextView.ScrollViewCommand.html" title="enum class in com.vuzix.ultralite">UltraliteSDK.ScrollingTextView.ScrollViewCommand</a>&nbsp;action)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Beginning in SDK 1.7.0 please use one of the following method calls instead:
+             <br><a href="#setPaused(boolean)"><code>setPaused(boolean)</code></a>
+             <br><a href="#scrollNow()"><code>scrollNow()</code></a>
+             <br><a href="#clear()"><code>clear()</code></a></div>
+</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="#scrollLayoutConfig(int,int,int,boolean)" class="member-name-link">scrollLayoutConfig</a><wbr>(int&nbsp;sliceHeight,
  int&nbsp;numSlicesVisible,
  int&nbsp;animationDurationMs,
  boolean&nbsp;autoScroll)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Beginning in 1.7.0 please use <a href="#scrollLayoutConfig(int,int,int,int,boolean)"><code>scrollLayoutConfig(int, int, int, int, boolean)</code></a>
+             to also control the minSlicePositionVisible.</div>
+</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#scrollLayoutConfig(int,int,int,int,boolean)" class="member-name-link">scrollLayoutConfig</a><wbr>(int&nbsp;sliceHeight,
+ int&nbsp;minSlicePositionVisible,
+ int&nbsp;numSlicesVisible,
+ int&nbsp;animationDurationMs,
+ boolean&nbsp;autoScroll)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">After requesting control to SCROLL layout, scrollLayoutConfig must be called to configure the image slices.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#scrollNow()" class="member-name-link">scrollNow</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">After requesting control to SCROLL layout, this must be called to configure the image slices.</div>
+<div class="block">After requesting control to SCROLL layout and configuring <a href="#scrollLayoutConfig(int,int,int,int,boolean)"><code>scrollLayoutConfig(int, int, int, int, boolean)</code></a>
+ with autoScroll false, this will manually request the contents to scroll by one position.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sendScrollImage(com.vuzix.ultralite.LVGLImage,int,boolean)" class="member-name-link">sendScrollImage</a><wbr>(<a href="LVGLImage.html" title="class in com.vuzix.ultralite">LVGLImage</a>&nbsp;image,
@@ -134,6 +207,19 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">After sending scrollLayoutConfig, this will set the screen content according to those
   configured parameters.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setPaused(boolean)" class="member-name-link">setPaused</a><wbr>(boolean&nbsp;pause)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">After requesting control to SCROLL layout and configuring <a href="#scrollLayoutConfig(int,int,int,int,boolean)"><code>scrollLayoutConfig(int, int, int, int, boolean)</code></a>
+ with autoScroll true, this will pause and resume the automatic scrolling behavior.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#validateScrollParameters(int,int,int)" class="member-name-link">validateScrollParameters</a><wbr>(int&nbsp;sliceHeight,
+ int&nbsp;minSlicePositionVisible,
+ int&nbsp;numSlicesVisible)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Utility method to check the paramters intended for <a href="#scrollLayoutConfig(int,int,int,int,boolean)"><code>scrollLayoutConfig(int, int, int, int, boolean)</code></a>.</div>
 </div>
 </div>
 </div>
@@ -144,11 +230,117 @@ loadScripts(document, 'script');</script>
 </section>
 <section class="details">
 <ul class="details-list">
+<!-- ============ FIELD DETAIL =========== -->
+<li>
+<section class="field-details" id="field-detail">
+<h2>Field Details</h2>
+<ul class="member-list">
+<li>
+<section class="detail" id="MIN_NUM_SLICES">
+<h3>MIN_NUM_SLICES</h3>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">MIN_NUM_SLICES</span></div>
+<div class="block">Minimum number of slices into which the screen can be divided using ScrollingTextView
+ Note: not all slices must be visible.</div>
+<dl class="notes">
+<dt>Since:</dt>
+<dd>1.7.0</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="see-list">
+<li><a href="../../../constant-values.html#com.vuzix.ultralite.UltraliteSDK.ScrollingTextView.MIN_NUM_SLICES">Constant Field Values</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="MAX_NUM_SLICES">
+<h3>MAX_NUM_SLICES</h3>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">MAX_NUM_SLICES</span></div>
+<div class="block">Maximum number of slices into which the screen can be divided using ScrollingTextView
+ Note: not all slices must be visible.</div>
+<dl class="notes">
+<dt>Since:</dt>
+<dd>1.7.0</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="see-list">
+<li><a href="../../../constant-values.html#com.vuzix.ultralite.UltraliteSDK.ScrollingTextView.MAX_NUM_SLICES">Constant Field Values</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="MIN_SLICE_HEIGHT">
+<h3>MIN_SLICE_HEIGHT</h3>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">MIN_SLICE_HEIGHT</span></div>
+<div class="block">Minimum height of any single slice.</div>
+<dl class="notes">
+<dt>Since:</dt>
+<dd>1.7.0</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="see-list">
+<li><a href="../../../constant-values.html#com.vuzix.ultralite.UltraliteSDK.ScrollingTextView.MIN_SLICE_HEIGHT">Constant Field Values</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="MAX_SLICE_HEIGHT">
+<h3>MAX_SLICE_HEIGHT</h3>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">MAX_SLICE_HEIGHT</span></div>
+<div class="block">Maximum height of any single slice.</div>
+<dl class="notes">
+<dt>Since:</dt>
+<dd>1.7.0</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="see-list">
+<li><a href="../../../constant-values.html#com.vuzix.ultralite.UltraliteSDK.ScrollingTextView.MAX_SLICE_HEIGHT">Constant Field Values</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+</li>
+</ul>
+</section>
+</li>
 <!-- ============ METHOD DETAIL ========== -->
 <li>
 <section class="method-details" id="method-detail">
 <h2>Method Details</h2>
 <ul class="member-list">
+<li>
+<section class="detail" id="validateScrollParameters(int,int,int)">
+<h3>validateScrollParameters</h3>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">validateScrollParameters</span><wbr><span class="parameters">(int&nbsp;sliceHeight,
+ int&nbsp;minSlicePositionVisible,
+ int&nbsp;numSlicesVisible)</span>
+                       throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></span></div>
+<div class="block">Utility method to check the paramters intended for <a href="#scrollLayoutConfig(int,int,int,int,boolean)"><code>scrollLayoutConfig(int, int, int, int, boolean)</code></a>.
+
+ This is called internally to throw exceptions if the parameters do not work together.
+ Clients do not need to directly call this, but are welcome to.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>sliceHeight</code> - The number of pixels high for each slice (all slices are the same).
+                    Range: [30-120] pixels.This divides the screen into between 4 and 16
+                    slices, and leaves any remainder unusable.</dd>
+<dd><code>minSlicePositionVisible</code> - The index of the lowest slice that will be visble. Use 0 to
+                                begin rendering at the lowest position possible. Use higher
+                                values to create a "mask" below the starting position. Text
+                                will appear from under that mask as if coming from off-screen.
+                                Min=0, Max=((480/sliceHeight)-1).</dd>
+<dd><code>numSlicesVisible</code> - The number of slices. Min=1. Max=((480/sliceHeight)-minSlicePositionVisible).
+                                Having fewer slices shown increases the animation quality.</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code></dd>
+</dl>
+</section>
+</li>
 <li>
 <section class="detail" id="scrollLayoutConfig(int,int,int,boolean)">
 <h3>scrollLayoutConfig</h3>
@@ -156,16 +348,70 @@ loadScripts(document, 'script');</script>
  int&nbsp;numSlicesVisible,
  int&nbsp;animationDurationMs,
  boolean&nbsp;autoScroll)</span></div>
-<div class="block">After requesting control to SCROLL layout, this must be called to configure the image slices.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Beginning in 1.7.0 please use <a href="#scrollLayoutConfig(int,int,int,int,boolean)"><code>scrollLayoutConfig(int, int, int, int, boolean)</code></a>
+             to also control the minSlicePositionVisible.</div>
+</div>
+<div class="block">After requesting control to SCROLL layout, scrollLayoutConfig must be called to configure the image slices.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>sliceHeight</code> - The number of pixels high for each slice (all slices are the same)</dd>
-<dd><code>numSlicesVisible</code> - The number of slices. Min=1. Max=(SCREEN_HEIGHT/sliceHeight). Having
+<dd><code>sliceHeight</code> - The number of pixels high for each slice (all slices are the same).
+                    Range: [30-120] pixels.This divides the screen into between 4 and 16
+                    slices, and leaves any remainder unusable.</dd>
+<dd><code>numSlicesVisible</code> - The number of slices. Min=1. Max=(480/sliceHeight). Having
                          fewer slices shown increases the animation quality.</dd>
 <dd><code>animationDurationMs</code> - The duration in milliseconds over which we animate text moving
                             between positions. Value 0 indicates instantaneous movement rather
                             than animation.</dd>
 <dd><code>autoScroll</code> - True will automatically scroll every animationDurationMs</dd>
+<dt>Since:</dt>
+<dd>1.4.0</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="see-list-long">
+<li><a href="#validateScrollParameters(int,int,int)"><code>validateScrollParameters(int, int, int)</code></a></li>
+<li><a href="#MIN_SLICE_HEIGHT"><code>MIN_SLICE_HEIGHT</code></a></li>
+<li><a href="#MAX_SLICE_HEIGHT"><code>MAX_SLICE_HEIGHT</code></a></li>
+</ul>
+</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="scrollLayoutConfig(int,int,int,int,boolean)">
+<h3>scrollLayoutConfig</h3>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">scrollLayoutConfig</span><wbr><span class="parameters">(int&nbsp;sliceHeight,
+ int&nbsp;minSlicePositionVisible,
+ int&nbsp;numSlicesVisible,
+ int&nbsp;animationDurationMs,
+ boolean&nbsp;autoScroll)</span></div>
+<div class="block">After requesting control to SCROLL layout, scrollLayoutConfig must be called to configure the image slices.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>sliceHeight</code> - The number of pixels high for each slice (all slices are the same).
+                    Range: [30-120] pixels.This divides the screen into between 4 and 16
+                    slices, and leaves any remainder unusable.</dd>
+<dd><code>minSlicePositionVisible</code> - The index of the lowest slice that will be visble. Use 0 to
+                                begin rendering at the lowest position possible. Use higher
+                                values to create a "mask" below the starting position. Text
+                                will appear from under that mask as if coming from off-screen.
+                                Min=0, Max=((480/sliceHeight)-1).</dd>
+<dd><code>numSlicesVisible</code> - The number of slices. Min=1. Max=((480/sliceHeight)-minSlicePositionVisible).
+                                Having fewer slices shown increases the animation quality.</dd>
+<dd><code>animationDurationMs</code> - The duration in milliseconds over which we animate text moving
+                            between positions. Value 0 indicates instantaneous movement rather
+                            than animation.</dd>
+<dd><code>autoScroll</code> - True will automatically scroll every animationDurationMs</dd>
+<dt>Since:</dt>
+<dd>1.7.0</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="see-list-long">
+<li><a href="#validateScrollParameters(int,int,int)"><code>validateScrollParameters(int, int, int)</code></a></li>
+<li><a href="#MIN_SLICE_HEIGHT"><code>MIN_SLICE_HEIGHT</code></a></li>
+<li><a href="#MAX_SLICE_HEIGHT"><code>MAX_SLICE_HEIGHT</code></a></li>
+</ul>
+</dd>
 </dl>
 </section>
 </li>
@@ -185,8 +431,10 @@ loadScripts(document, 'script');</script>
 <dd><code>slicePosition</code> - - The position from 0 (bottom) to numSlicesVisible-1 (top) to place the
                       image.</dd>
 <dd><code>scrollFirst</code> - - Commonly used when not configured for autoScroll. This causes the screen
-                    buffers to rotate one position prior to updating the image data. After
+                    buffers to rotate one position prior to updating the image data. After*
                     rotating, the bottom slice (position 0) is guaranteed empty.</dd>
+<dt>Since:</dt>
+<dd>1.4.0</dd>
 </dl>
 </section>
 </li>
@@ -194,17 +442,77 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="scrollAction(com.vuzix.ultralite.UltraliteSDK.ScrollingTextView.ScrollViewCommand)">
 <h3>scrollAction</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">scrollAction</span><wbr><span class="parameters">(<a href="UltraliteSDK.ScrollingTextView.ScrollViewCommand.html" title="enum class in com.vuzix.ultralite">UltraliteSDK.ScrollingTextView.ScrollViewCommand</a>&nbsp;action)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Beginning in SDK 1.7.0 please use one of the following method calls instead:
+             <br><a href="#setPaused(boolean)"><code>setPaused(boolean)</code></a>
+             <br><a href="#scrollNow()"><code>scrollNow()</code></a>
+             <br><a href="#clear()"><code>clear()</code></a></div>
+</div>
 <div class="block">After requesting control to SCROLL layout and populating with image data, this sends an
  explicit control to the buffer behavior.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>action</code> - The action to perform</dd>
+<dt>Since:</dt>
+<dd>1.4.0</dd>
 <dt>See Also:</dt>
 <dd>
 <ul class="see-list-long">
 <li><a href="UltraliteSDK.ScrollingTextView.ScrollViewCommand.html" title="enum class in com.vuzix.ultralite"><code>UltraliteSDK.ScrollingTextView.ScrollViewCommand</code></a></li>
 </ul>
 </dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="setPaused(boolean)">
+<h3>setPaused</h3>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">setPaused</span><wbr><span class="parameters">(boolean&nbsp;pause)</span></div>
+<div class="block">After requesting control to SCROLL layout and configuring <a href="#scrollLayoutConfig(int,int,int,int,boolean)"><code>scrollLayoutConfig(int, int, int, int, boolean)</code></a>
+ with autoScroll true, this will pause and resume the automatic scrolling behavior.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>pause</code> - True to request scrolling to pause.  False to request scrolling to resume;</dd>
+<dt>Since:</dt>
+<dd>1.7.0</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="scrollNow()">
+<h3>scrollNow</h3>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">scrollNow</span>()</div>
+<div class="block">After requesting control to SCROLL layout and configuring <a href="#scrollLayoutConfig(int,int,int,int,boolean)"><code>scrollLayoutConfig(int, int, int, int, boolean)</code></a>
+ with autoScroll false, this will manually request the contents to scroll by one position.</div>
+<dl class="notes">
+<dt>Since:</dt>
+<dd>1.7.0</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="clear()">
+<h3>clear</h3>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">clear</span>()</div>
+<div class="block">After requesting control to SCROLL layout and populating with image data, this removes all
+ content from the screen.</div>
+<dl class="notes">
+<dt>Since:</dt>
+<dd>1.7.0</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="clear(int)">
+<h3>clear</h3>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">clear</span><wbr><span class="parameters">(int&nbsp;slicePosition)</span></div>
+<div class="block">After requesting control to SCROLL layout and populating with image data, this removes one
+ selected slice from the screen.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>slicePosition</code> - - The position from 0 (bottom) to numSlicesVisible-1 (top) to clear to black.</dd>
+<dt>Since:</dt>
+<dd>1.7.0</dd>
 </dl>
 </section>
 </li>

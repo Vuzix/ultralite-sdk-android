@@ -35,6 +35,7 @@ loadScripts(document, 'script');</script>
 <li><a href="package-summary.html">Package</a></li>
 <li class="nav-bar-cell1-rev">Class</li>
 <li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
 <li><a href="../../../../../index-all.html">Index</a></li>
 <li><a href="../../../../../help-doc.html#class">Help</a></li>
 </ul>
@@ -96,6 +97,8 @@ loadScripts(document, 'script');</script>
  to a line-by-line insertion, consider using AutoScroller instead.
 </p></div>
 <dl class="notes">
+<dt>Since:</dt>
+<dd>1.4.0</dd>
 <dt>See Also:</dt>
 <dd>
 <ul class="see-list">
@@ -115,12 +118,24 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.vuzix.ultralite.UltraliteSDK,int,int,android.text.TextPaint)" class="member-name-link">LiveText</a><wbr>(<a href="../../UltraliteSDK.html" title="interface in com.vuzix.ultralite">UltraliteSDK</a>&nbsp;ultraliteSdk,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.vuzix.ultralite.UltraliteSDK,int,int,int,int,android.text.TextPaint)" class="member-name-link">LiveText</a><wbr>(<a href="../../UltraliteSDK.html" title="interface in com.vuzix.ultralite">UltraliteSDK</a>&nbsp;ultraliteSdk,
  int&nbsp;lineHeight,
  int&nbsp;lineWidth,
+ int&nbsp;startingLineIndex,
+ int&nbsp;numSlicesVisible,
  android.text.TextPaint&nbsp;textPaint)</code></div>
 <div class="col-last even-row-color">
 <div class="block">Creates an instance of the LiveText.</div>
+</div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(com.vuzix.ultralite.UltraliteSDK,int,int,android.text.TextPaint)" class="member-name-link">LiveText</a><wbr>(<a href="../../UltraliteSDK.html" title="interface in com.vuzix.ultralite">UltraliteSDK</a>&nbsp;ultraliteSdk,
+ int&nbsp;lineHeight,
+ int&nbsp;lineWidth,
+ android.text.TextPaint&nbsp;textPaint)</code></div>
+<div class="col-last odd-row-color">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Beginning in 1.7.0 use <a href="#%3Cinit%3E(com.vuzix.ultralite.UltraliteSDK,int,int,int,int,android.text.TextPaint)"><code>LiveText(UltraliteSDK, int, int, int, int, TextPaint)</code></a>
+                     to also set the text position vertically.</div>
+</div>
 </div>
 </div>
 </section>
@@ -170,16 +185,57 @@ loadScripts(document, 'script');</script>
  int&nbsp;lineHeight,
  int&nbsp;lineWidth,
  android.text.TextPaint&nbsp;textPaint)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Beginning in 1.7.0 use <a href="#%3Cinit%3E(com.vuzix.ultralite.UltraliteSDK,int,int,int,int,android.text.TextPaint)"><code>LiveText(UltraliteSDK, int, int, int, int, TextPaint)</code></a>
+                     to also set the text position vertically.</div>
+</div>
 <div class="block">Creates an instance of the LiveText.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>ultraliteSdk</code> - The instance of your UltraliteSDK.</dd>
 <dd><code>lineHeight</code> - The number of glasses pixels each line of text will utilize. This must be
                      large enough to fit a single line of text at the requested font size,
-                     plus any inter-line padding that is desired. Range: [30-120] pixels.</dd>
-<dd><code>lineWidth</code> - The width of the text on the screen. Range: [1-640]</dd>
+                     plus any inter-line padding that is desired. Range: [30-120] pixels. This
+                     divides the screen into between 4 and 16 lines of text.</dd>
+<dd><code>lineWidth</code> - The width of the text on the screen. Range: [30-640].</dd>
 <dd><code>textPaint</code> - Specifies all attributes related to text drawing. Send null to use the
-                      default TextPaint.</dd>
+                     default TextPaint.</dd>
+<dt>Since:</dt>
+<dd>1.4.0</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="&lt;init&gt;(com.vuzix.ultralite.UltraliteSDK,int,int,int,int,android.text.TextPaint)">
+<h3>LiveText</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">LiveText</span><wbr><span class="parameters">(<a href="../../UltraliteSDK.html" title="interface in com.vuzix.ultralite">UltraliteSDK</a>&nbsp;ultraliteSdk,
+ int&nbsp;lineHeight,
+ int&nbsp;lineWidth,
+ int&nbsp;startingLineIndex,
+ int&nbsp;numSlicesVisible,
+ android.text.TextPaint&nbsp;textPaint)</span></div>
+<div class="block">Creates an instance of the LiveText.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>ultraliteSdk</code> - The instance of your UltraliteSDK.</dd>
+<dd><code>lineHeight</code> - The number of glasses pixels each line of text will utilize. This must be
+                     large enough to fit a single line of text at the requested font size,
+                     plus any inter-line padding that is desired. Range: [30-120] pixels. This
+                     divides the screen into between 4 and 16 lines of text.
+                     Recommended starting value: 48 (10 lines of text maximum).</dd>
+<dd><code>lineWidth</code> - The width of the text on the screen. Range: [30-640].
+                     Recommended starting value: 640.</dd>
+<dd><code>startingLineIndex</code> - The text row index to which to start text. Zero starts text at the
+                     lowest possible starting point. Range: [ 0 - ((480/lineHeight)-1)]
+                     Recommended starting value: 0.</dd>
+<dd><code>numSlicesVisible</code> - The maximum number of text lines that will be fully visible before
+                     scrolling off the top. Having fewer slices shown increases the animation
+                     quality.  Min=1. Max=((480/lineHeight)-startingLineIndex).
+                     Recommended starting value: 3.</dd>
+<dd><code>textPaint</code> - Specifies all attributes related to text drawing. Send null to use the
+                     default TextPaint.</dd>
+<dt>Since:</dt>
+<dd>1.7.0</dd>
 </dl>
 </section>
 </li>
@@ -204,6 +260,8 @@ loadScripts(document, 'script');</script>
 <dd><code>stringToDisplay</code> - Most recent string of all text that should be on the glasses now</dd>
 <dt>Throws:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html" title="class or interface in java.lang" class="external-link">IllegalStateException</a></code> - If we do not have control or are not in the scroll layout.</dd>
+<dt>Since:</dt>
+<dd>1.4.0</dd>
 </dl>
 </section>
 </li>
@@ -218,6 +276,8 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Throws:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html" title="class or interface in java.lang" class="external-link">IllegalStateException</a></code> - If we do not have control or are not in the scroll layout.</dd>
+<dt>Since:</dt>
+<dd>1.4.0</dd>
 </dl>
 </section>
 </li>

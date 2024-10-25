@@ -31,6 +31,7 @@ loadScripts(document, 'script');</script>
 <li>Package</li>
 <li>Class</li>
 <li><a href="overview-tree.html">Tree</a></li>
+<li><a href="deprecated-list.html">Deprecated</a></li>
 <li class="nav-bar-cell1-rev">Index</li>
 <li><a href="help-doc.html#index">Help</a></li>
 </ul>
@@ -73,9 +74,16 @@ loadScripts(document, 'script');</script>
 <div class="block">AutoScroller is a utility class to send a large known block of predefined text to the glasses to
  be smoothly scrolled.</div>
 </dd>
-<dt><a href="com/vuzix/ultralite/utils/scroll/AutoScroller.html#%3Cinit%3E(com.vuzix.ultralite.UltraliteSDK,java.lang.String,int,int,int,android.text.TextPaint)" class="member-name-link">AutoScroller(UltraliteSDK, String, int, int, int, TextPaint)</a> - Constructor for class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/AutoScroller.html" title="class in com.vuzix.ultralite.utils.scroll">AutoScroller</a></dt>
+<dt><a href="com/vuzix/ultralite/utils/scroll/AutoScroller.html#%3Cinit%3E(com.vuzix.ultralite.UltraliteSDK,java.lang.String,int,int,int,int,android.text.TextPaint)" class="member-name-link">AutoScroller(UltraliteSDK, String, int, int, int, int, TextPaint)</a> - Constructor for class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/AutoScroller.html" title="class in com.vuzix.ultralite.utils.scroll">AutoScroller</a></dt>
 <dd>
 <div class="block">Creates an instance of the AutoScroller.</div>
+</dd>
+<dt><a href="com/vuzix/ultralite/utils/scroll/AutoScroller.html#%3Cinit%3E(com.vuzix.ultralite.UltraliteSDK,java.lang.String,int,int,int,android.text.TextPaint)" class="member-name-link">AutoScroller(UltraliteSDK, String, int, int, int, TextPaint)</a> - Constructor for class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/AutoScroller.html" title="class in com.vuzix.ultralite.utils.scroll">AutoScroller</a></dt>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Beginning in 1.7.0 use <a href="com/vuzix/ultralite/utils/scroll/AutoScroller.html#%3Cinit%3E(com.vuzix.ultralite.UltraliteSDK,java.lang.String,int,int,int,int,android.text.TextPaint)"><code>AutoScroller(UltraliteSDK, String, int, int, int, int, TextPaint)</code></a> for
+ the version that specifies startingLineIndex.</div>
+</div>
 </dd>
 <dt><a href="com/vuzix/ultralite/utils/scroll/AutoScroller.AutoScrollEnded.html" class="type-name-link" title="interface in com.vuzix.ultralite.utils.scroll">AutoScroller.AutoScrollEnded</a> - Interface in <a href="com/vuzix/ultralite/utils/scroll/package-summary.html">com.vuzix.ultralite.utils.scroll</a></dt>
 <dd>
@@ -135,9 +143,19 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Clears the entire canvas.</div>
 </dd>
+<dt><a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html#clear()" class="member-name-link">clear()</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html" title="interface in com.vuzix.ultralite">UltraliteSDK.ScrollingTextView</a></dt>
+<dd>
+<div class="block">After requesting control to SCROLL layout and populating with image data, this removes all
+ content from the screen.</div>
+</dd>
 <dt><a href="com/vuzix/ultralite/utils/scroll/LiveText.html#clear()" class="member-name-link">clear()</a> - Method in class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/LiveText.html" title="class in com.vuzix.ultralite.utils.scroll">LiveText</a></dt>
 <dd>
 <div class="block">Clear the glasses display of previously shown text</div>
+</dd>
+<dt><a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html#clear(int)" class="member-name-link">clear(int)</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html" title="interface in com.vuzix.ultralite">UltraliteSDK.ScrollingTextView</a></dt>
+<dd>
+<div class="block">After requesting control to SCROLL layout and populating with image data, this removes one
+ selected slice from the screen.</div>
 </dd>
 <dt><a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.ScrollViewCommand.html#ClearAll" class="member-name-link">ClearAll</a> - Enum constant in enum class com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.ScrollViewCommand.html" title="enum class in com.vuzix.ultralite">UltraliteSDK.ScrollingTextView.ScrollViewCommand</a></dt>
 <dd>
@@ -187,6 +205,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/vuzix/ultralite/UltraliteSDK.Canvas.html#commit(com.vuzix.ultralite.UltraliteSDK.Canvas.CommitCallback)" class="member-name-link">commit(UltraliteSDK.Canvas.CommitCallback)</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.Canvas.html" title="interface in com.vuzix.ultralite">UltraliteSDK.Canvas</a></dt>
 <dd>
 <div class="block">Commits canvas changes made since the last commit.</div>
+</dd>
+<dt><a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.html#compareTo(com.vuzix.ultralite.utils.scroll.TextToImageSlicer)" class="member-name-link">compareTo(TextToImageSlicer)</a> - Method in class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.html" title="class in com.vuzix.ultralite.utils.scroll">TextToImageSlicer</a></dt>
+<dd>
+<div class="block">Compare one TextToImageSlicer to another for detailed results</div>
 </dd>
 <dt><a href="com/vuzix/ultralite/UltraliteSDK.Canvas.html#createAnimation(com.vuzix.ultralite.LVGLImage%5B%5D,com.vuzix.ultralite.Anchor,int)" class="member-name-link">createAnimation(LVGLImage[], Anchor, int)</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.Canvas.html" title="interface in com.vuzix.ultralite">UltraliteSDK.Canvas</a></dt>
 <dd>
@@ -242,6 +264,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/vuzix/ultralite/LVGLImage.ColorMapper.html#DIM" class="member-name-link">DIM</a> - Static variable in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/LVGLImage.ColorMapper.html" title="interface in com.vuzix.ultralite">LVGLImage.ColorMapper</a></dt>
 <dd>
 <div class="block">Displays a dimly lit pixel on the glasses.</div>
+</dd>
+<dt><a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.html#discardLeadingLines(int)" class="member-name-link">discardLeadingLines(int)</a> - Method in class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.html" title="class in com.vuzix.ultralite.utils.scroll">TextToImageSlicer</a></dt>
+<dd>
+<div class="block">Discard the leading lines of text</div>
 </dd>
 <dt><a href="com/vuzix/ultralite/UltraliteSDK.Canvas.CommitCallback.html#done()" class="member-name-link">done()</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.Canvas.CommitCallback.html" title="interface in com.vuzix.ultralite">UltraliteSDK.Canvas.CommitCallback</a></dt>
 <dd>
@@ -394,7 +420,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/vuzix/ultralite/UltraliteSDK.Canvas.html#HEIGHT" class="member-name-link">HEIGHT</a> - Static variable in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.Canvas.html" title="interface in com.vuzix.ultralite">UltraliteSDK.Canvas</a></dt>
 <dd>
-<div class="block">available height of the canvas that can be drawn to</div>
+<div class="block">available height of the canvas to which we can draw</div>
 </dd>
 </dl>
 <h2 class="title" id="I:I">I</h2>
@@ -461,14 +487,25 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Force left alignment</div>
 </dd>
+<dt><a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.SliceComparison.html#lineDifferentMap" class="member-name-link">lineDifferentMap</a> - Variable in class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.SliceComparison.html" title="class in com.vuzix.ultralite.utils.scroll">TextToImageSlicer.SliceComparison</a></dt>
+<dd>
+<div class="block">An array of booleans.</div>
+</dd>
 <dt><a href="com/vuzix/ultralite/utils/scroll/LiveText.html" class="type-name-link" title="class in com.vuzix.ultralite.utils.scroll">LiveText</a> - Class in <a href="com/vuzix/ultralite/utils/scroll/package-summary.html">com.vuzix.ultralite.utils.scroll</a></dt>
 <dd>
 <div class="block">LiveText is a utility class to send small blocks of rapidly updating text to the glasses to be
  displayed at the bottom of the field of view.</div>
 </dd>
-<dt><a href="com/vuzix/ultralite/utils/scroll/LiveText.html#%3Cinit%3E(com.vuzix.ultralite.UltraliteSDK,int,int,android.text.TextPaint)" class="member-name-link">LiveText(UltraliteSDK, int, int, TextPaint)</a> - Constructor for class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/LiveText.html" title="class in com.vuzix.ultralite.utils.scroll">LiveText</a></dt>
+<dt><a href="com/vuzix/ultralite/utils/scroll/LiveText.html#%3Cinit%3E(com.vuzix.ultralite.UltraliteSDK,int,int,int,int,android.text.TextPaint)" class="member-name-link">LiveText(UltraliteSDK, int, int, int, int, TextPaint)</a> - Constructor for class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/LiveText.html" title="class in com.vuzix.ultralite.utils.scroll">LiveText</a></dt>
 <dd>
 <div class="block">Creates an instance of the LiveText.</div>
+</dd>
+<dt><a href="com/vuzix/ultralite/utils/scroll/LiveText.html#%3Cinit%3E(com.vuzix.ultralite.UltraliteSDK,int,int,android.text.TextPaint)" class="member-name-link">LiveText(UltraliteSDK, int, int, TextPaint)</a> - Constructor for class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/LiveText.html" title="class in com.vuzix.ultralite.utils.scroll">LiveText</a></dt>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Beginning in 1.7.0 use <a href="com/vuzix/ultralite/utils/scroll/LiveText.html#%3Cinit%3E(com.vuzix.ultralite.UltraliteSDK,int,int,int,int,android.text.TextPaint)"><code>LiveText(UltraliteSDK, int, int, int, int, TextPaint)</code></a>
+                     to also set the text position vertically.</div>
+</div>
 </dd>
 <dt><a href="com/vuzix/ultralite/LVGLImage.html" class="type-name-link" title="class in com.vuzix.ultralite">LVGLImage</a> - Class in <a href="com/vuzix/ultralite/package-summary.html">com.vuzix.ultralite</a></dt>
 <dd>
@@ -489,6 +526,15 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Maps a Color to an index in the palette.</div>
 </dd>
+<dt><a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html#MAX_NUM_SLICES" class="member-name-link">MAX_NUM_SLICES</a> - Static variable in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html" title="interface in com.vuzix.ultralite">UltraliteSDK.ScrollingTextView</a></dt>
+<dd>
+<div class="block">Maximum number of slices into which the screen can be divided using ScrollingTextView
+ Note: not all slices must be visible.</div>
+</dd>
+<dt><a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html#MAX_SLICE_HEIGHT" class="member-name-link">MAX_SLICE_HEIGHT</a> - Static variable in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html" title="interface in com.vuzix.ultralite">UltraliteSDK.ScrollingTextView</a></dt>
+<dd>
+<div class="block">Maximum height of any single slice.</div>
+</dd>
 <dt><a href="com/vuzix/ultralite/UltraliteColor.html#MID" class="member-name-link">MID</a> - Enum constant in enum class com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteColor.html" title="enum class in com.vuzix.ultralite">UltraliteColor</a></dt>
 <dd>
 <div class="block">Mid level of visible light added to the pixel</div>
@@ -504,6 +550,15 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/vuzix/ultralite/Anchor.html#MIDDLE_RIGHT" class="member-name-link">MIDDLE_RIGHT</a> - Enum constant in enum class com.vuzix.ultralite.<a href="com/vuzix/ultralite/Anchor.html" title="enum class in com.vuzix.ultralite">Anchor</a></dt>
 <dd>
 <div class="block">Anchor position: middle up/down - right</div>
+</dd>
+<dt><a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html#MIN_NUM_SLICES" class="member-name-link">MIN_NUM_SLICES</a> - Static variable in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html" title="interface in com.vuzix.ultralite">UltraliteSDK.ScrollingTextView</a></dt>
+<dd>
+<div class="block">Minimum number of slices into which the screen can be divided using ScrollingTextView
+ Note: not all slices must be visible.</div>
+</dd>
+<dt><a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html#MIN_SLICE_HEIGHT" class="member-name-link">MIN_SLICE_HEIGHT</a> - Static variable in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html" title="interface in com.vuzix.ultralite">UltraliteSDK.ScrollingTextView</a></dt>
+<dd>
+<div class="block">Minimum height of any single slice.</div>
 </dd>
 <dt><a href="com/vuzix/ultralite/UltraliteSDK.Canvas.html#moveAnimation(int,int,int)" class="member-name-link">moveAnimation(int, int, int)</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.Canvas.html" title="interface in com.vuzix.ultralite">UltraliteSDK.Canvas</a></dt>
 <dd>
@@ -539,6 +594,14 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/vuzix/ultralite/Icon.html#NONE" class="member-name-link">NONE</a> - Enum constant in enum class com.vuzix.ultralite.<a href="com/vuzix/ultralite/Icon.html" title="enum class in com.vuzix.ultralite">Icon</a></dt>
 <dd>
 <div class="block">Do not show any icon</div>
+</dd>
+<dt><a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.SliceComparison.html#numberDifferentLines" class="member-name-link">numberDifferentLines</a> - Variable in class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.SliceComparison.html" title="class in com.vuzix.ultralite.utils.scroll">TextToImageSlicer.SliceComparison</a></dt>
+<dd>
+<div class="block">The number of lines that are the different betweent the two objects.</div>
+</dd>
+<dt><a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.SliceComparison.html#numberSameLines" class="member-name-link">numberSameLines</a> - Variable in class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.SliceComparison.html" title="class in com.vuzix.ultralite.utils.scroll">TextToImageSlicer.SliceComparison</a></dt>
+<dd>
+<div class="block">The number of lines that are the same betweent the two objects.</div>
 </dd>
 </dl>
 <h2 class="title" id="I:O">O</h2>
@@ -580,7 +643,7 @@ loadScripts(document, 'script');</script>
 <dl class="index">
 <dt><a href="com/vuzix/ultralite/utils/scroll/AutoScroller.html#pause()" class="member-name-link">pause()</a> - Method in class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/AutoScroller.html" title="class in com.vuzix.ultralite.utils.scroll">AutoScroller</a></dt>
 <dd>
-<div class="block">Call this after start() to temporarily pause the scroll.</div>
+<div class="block">Call this after <a href="com/vuzix/ultralite/utils/scroll/AutoScroller.html#start()"><code>AutoScroller.start()</code></a> to temporarily pause the scroll.</div>
 </dd>
 <dt><a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.ScrollViewCommand.html#PauseAutoScroll" class="member-name-link">PauseAutoScroll</a> - Enum constant in enum class com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.ScrollViewCommand.html" title="enum class in com.vuzix.ultralite">UltraliteSDK.ScrollingTextView.ScrollViewCommand</a></dt>
 <dd>
@@ -613,6 +676,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Removes a previously created text block.</div>
 </dd>
+<dt><a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.html#replaceLineFrom(com.vuzix.ultralite.utils.scroll.TextToImageSlicer,int)" class="member-name-link">replaceLineFrom(TextToImageSlicer, int)</a> - Method in class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.html" title="class in com.vuzix.ultralite.utils.scroll">TextToImageSlicer</a></dt>
+<dd>
+<div class="block">Replace a line in the current sliced text with a line from another textToImageSlicer</div>
+</dd>
 <dt><a href="com/vuzix/ultralite/UltraliteSDK.html#requestAcknowledgement(com.vuzix.ultralite.UltraliteSDK.AcknowledgedCallback)" class="member-name-link">requestAcknowledgement(UltraliteSDK.AcknowledgedCallback)</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.html" title="interface in com.vuzix.ultralite">UltraliteSDK</a></dt>
 <dd>
 <div class="block">Request to be notified when this message is received by the glasses.</div>
@@ -623,7 +690,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/vuzix/ultralite/utils/scroll/AutoScroller.html#resume()" class="member-name-link">resume()</a> - Method in class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/AutoScroller.html" title="class in com.vuzix.ultralite.utils.scroll">AutoScroller</a></dt>
 <dd>
-<div class="block">Call this after pause() to resume</div>
+<div class="block">Call this after <a href="com/vuzix/ultralite/utils/scroll/AutoScroller.html#pause()"><code>AutoScroller.pause()</code></a> to resume</div>
 </dd>
 <dt><a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.ScrollViewCommand.html#ResumeAutoScroll" class="member-name-link">ResumeAutoScroll</a> - Enum constant in enum class com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.ScrollViewCommand.html" title="enum class in com.vuzix.ultralite">UltraliteSDK.ScrollingTextView.ScrollViewCommand</a></dt>
 <dd>
@@ -662,12 +729,28 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html#scrollAction(com.vuzix.ultralite.UltraliteSDK.ScrollingTextView.ScrollViewCommand)" class="member-name-link">scrollAction(UltraliteSDK.ScrollingTextView.ScrollViewCommand)</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html" title="interface in com.vuzix.ultralite">UltraliteSDK.ScrollingTextView</a></dt>
 <dd>
-<div class="block">After requesting control to SCROLL layout and populating with image data, this sends an
- explicit control to the buffer behavior.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Beginning in SDK 1.7.0 please use one of the following method calls instead:
+             <br><a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html#setPaused(boolean)"><code>UltraliteSDK.ScrollingTextView.setPaused(boolean)</code></a>
+             <br><a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html#scrollNow()"><code>UltraliteSDK.ScrollingTextView.scrollNow()</code></a>
+             <br><a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html#clear()"><code>UltraliteSDK.ScrollingTextView.clear()</code></a></div>
+</div>
 </dd>
 <dt><a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html#scrollLayoutConfig(int,int,int,boolean)" class="member-name-link">scrollLayoutConfig(int, int, int, boolean)</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html" title="interface in com.vuzix.ultralite">UltraliteSDK.ScrollingTextView</a></dt>
 <dd>
-<div class="block">After requesting control to SCROLL layout, this must be called to configure the image slices.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Beginning in 1.7.0 please use <a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html#scrollLayoutConfig(int,int,int,int,boolean)"><code>UltraliteSDK.ScrollingTextView.scrollLayoutConfig(int, int, int, int, boolean)</code></a>
+             to also control the minSlicePositionVisible.</div>
+</div>
+</dd>
+<dt><a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html#scrollLayoutConfig(int,int,int,int,boolean)" class="member-name-link">scrollLayoutConfig(int, int, int, int, boolean)</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html" title="interface in com.vuzix.ultralite">UltraliteSDK.ScrollingTextView</a></dt>
+<dd>
+<div class="block">After requesting control to SCROLL layout, scrollLayoutConfig must be called to configure the image slices.</div>
+</dd>
+<dt><a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html#scrollNow()" class="member-name-link">scrollNow()</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html" title="interface in com.vuzix.ultralite">UltraliteSDK.ScrollingTextView</a></dt>
+<dd>
+<div class="block">After requesting control to SCROLL layout and configuring <a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html#scrollLayoutConfig(int,int,int,int,boolean)"><code>UltraliteSDK.ScrollingTextView.scrollLayoutConfig(int, int, int, int, boolean)</code></a>
+ with autoScroll false, this will manually request the contents to scroll by one position.</div>
 </dd>
 <dt><a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.ScrollViewCommand.html#ScrollNow" class="member-name-link">ScrollNow</a> - Enum constant in enum class com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.ScrollViewCommand.html" title="enum class in com.vuzix.ultralite">UltraliteSDK.ScrollingTextView.ScrollViewCommand</a></dt>
 <dd>
@@ -742,10 +825,17 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Requests the specified layout, timeout and hidden status bar if desired.</div>
 </dd>
+<dt><a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html#setPaused(boolean)" class="member-name-link">setPaused(boolean)</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html" title="interface in com.vuzix.ultralite">UltraliteSDK.ScrollingTextView</a></dt>
+<dd>
+<div class="block">After requesting control to SCROLL layout and configuring <a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html#scrollLayoutConfig(int,int,int,int,boolean)"><code>UltraliteSDK.ScrollingTextView.scrollLayoutConfig(int, int, int, int, boolean)</code></a>
+ with autoScroll true, this will pause and resume the automatic scrolling behavior.</div>
+</dd>
 <dt><a href="com/vuzix/ultralite/UltraliteSDK.Canvas.html#setTextVisible(int,boolean)" class="member-name-link">setTextVisible(int, boolean)</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.Canvas.html" title="interface in com.vuzix.ultralite">UltraliteSDK.Canvas</a></dt>
 <dd>
 <div class="block">Changes visibility of text.</div>
 </dd>
+<dt><a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.SliceComparison.html#%3Cinit%3E()" class="member-name-link">SliceComparison()</a> - Constructor for class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.SliceComparison.html" title="class in com.vuzix.ultralite.utils.scroll">TextToImageSlicer.SliceComparison</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/vuzix/ultralite/utils/scroll/AutoScroller.html#start()" class="member-name-link">start()</a> - Method in class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/AutoScroller.html" title="class in com.vuzix.ultralite.utils.scroll">AutoScroller</a></dt>
 <dd>
 <div class="block">Start showing the text.</div>
@@ -781,6 +871,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Utility class to convert blocks of text to image slices to send to the SCROLL layout.</div>
 </dd>
+<dt><a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.html#%3Cinit%3E(com.vuzix.ultralite.utils.scroll.TextToImageSlicer)" class="member-name-link">TextToImageSlicer(TextToImageSlicer)</a> - Constructor for class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.html" title="class in com.vuzix.ultralite.utils.scroll">TextToImageSlicer</a></dt>
+<dd>
+<div class="block">Create a deep copy of the TextToImageSlicer</div>
+</dd>
 <dt><a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.html#%3Cinit%3E(java.lang.String,int,int)" class="member-name-link">TextToImageSlicer(String, int, int)</a> - Constructor for class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.html" title="class in com.vuzix.ultralite.utils.scroll">TextToImageSlicer</a></dt>
 <dd>
 <div class="block">Construct a slicer to convert a block of text to a series of image slices that can be sent
@@ -795,6 +889,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Construct a slicer to convert a block of text to a series of image slices that can be sent
  to the SCROLL layout.</div>
+</dd>
+<dt><a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.SliceComparison.html" class="type-name-link" title="class in com.vuzix.ultralite.utils.scroll">TextToImageSlicer.SliceComparison</a> - Class in <a href="com/vuzix/ultralite/utils/scroll/package-summary.html">com.vuzix.ultralite.utils.scroll</a></dt>
+<dd>
+<div class="block">Detailed results of comparing two slice objects</div>
 </dd>
 <dt><a href="com/vuzix/ultralite/TextWrapMode.html" class="type-name-link" title="enum class in com.vuzix.ultralite">TextWrapMode</a> - Enum Class in <a href="com/vuzix/ultralite/package-summary.html">com.vuzix.ultralite</a></dt>
 <dd>
@@ -812,9 +910,17 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Anchor position: top - right</div>
 </dd>
+<dt><a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.html#toString()" class="member-name-link">toString()</a> - Method in class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.html" title="class in com.vuzix.ultralite.utils.scroll">TextToImageSlicer</a></dt>
+<dd>
+<div class="block">Return the string currently being sliced, useful for debugging</div>
+</dd>
 <dt><a href="com/vuzix/ultralite/TextWrapMode.html#TRUNCATE" class="member-name-link">TRUNCATE</a> - Enum constant in enum class com.vuzix.ultralite.<a href="com/vuzix/ultralite/TextWrapMode.html" title="enum class in com.vuzix.ultralite">TextWrapMode</a></dt>
 <dd>
 <div class="block">If the text is wider than the label, replaces the last 3 characters from bottom right corner of the label with dots (.)</div>
+</dd>
+<dt><a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.html#truncateToLine(int)" class="member-name-link">truncateToLine(int)</a> - Method in class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.html" title="class in com.vuzix.ultralite.utils.scroll">TextToImageSlicer</a></dt>
+<dd>
+<div class="block">Truncate this sliced text to a given number of lines.</div>
 </dd>
 </dl>
 <h2 class="title" id="I:U">U</h2>
@@ -863,6 +969,10 @@ loadScripts(document, 'script');</script>
 </dl>
 <h2 class="title" id="I:V">V</h2>
 <dl class="index">
+<dt><a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html#validateScrollParameters(int,int,int)" class="member-name-link">validateScrollParameters(int, int, int)</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html" title="interface in com.vuzix.ultralite">UltraliteSDK.ScrollingTextView</a></dt>
+<dd>
+<div class="block">Utility method to check the paramters intended for <a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html#scrollLayoutConfig(int,int,int,int,boolean)"><code>UltraliteSDK.ScrollingTextView.scrollLayoutConfig(int, int, int, int, boolean)</code></a>.</div>
+</dd>
 <dt><a href="com/vuzix/ultralite/Anchor.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class com.vuzix.ultralite.<a href="com/vuzix/ultralite/Anchor.html" title="enum class in com.vuzix.ultralite">Anchor</a></dt>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
@@ -939,7 +1049,7 @@ the order they are declared.</div>
 </dd>
 <dt><a href="com/vuzix/ultralite/UltraliteSDK.Canvas.html#WIDTH" class="member-name-link">WIDTH</a> - Static variable in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.Canvas.html" title="interface in com.vuzix.ultralite">UltraliteSDK.Canvas</a></dt>
 <dd>
-<div class="block">available width of the canvas that can be drawn to</div>
+<div class="block">available width of the canvas to which we can draw</div>
 </dd>
 <dt><a href="com/vuzix/ultralite/TextWrapMode.html#WRAP" class="member-name-link">WRAP</a> - Enum constant in enum class com.vuzix.ultralite.<a href="com/vuzix/ultralite/TextWrapMode.html" title="enum class in com.vuzix.ultralite">TextWrapMode</a></dt>
 <dd>
