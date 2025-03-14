@@ -118,6 +118,11 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">Interface class to receive a notification when the AutoScroller worker thread completes.</div>
 </div>
+<div class="col-first odd-row-color"><code>static interface&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><a href="AutoScroller.AutoScrollProgress.html" class="type-name-link" title="interface in com.vuzix.ultralite.utils.scroll">AutoScroller.AutoScrollProgress</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Interface class to receive a notification when the glasses have shown a new line.</div>
+</div>
 </div>
 </section>
 </li>
@@ -165,30 +170,40 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isPaused()" class="member-name-link">isPaused</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>[]</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSlicedStrings()" class="member-name-link">getSlicedStrings</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Get an array of strings with each one comprising a single line on the glasses.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isPaused()" class="member-name-link">isPaused</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Determine if the scrolling is paused.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#pause()" class="member-name-link">pause</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#pause()" class="member-name-link">pause</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Call this after <a href="#start()"><code>start()</code></a> to temporarily pause the scroll.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#resume()" class="member-name-link">resume</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#resume()" class="member-name-link">resume</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Call this after <a href="#pause()"><code>pause()</code></a> to resume</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setCallback(com.vuzix.ultralite.utils.scroll.AutoScroller.AutoScrollEnded)" class="member-name-link">setCallback</a><wbr>(<a href="AutoScroller.AutoScrollEnded.html" title="interface in com.vuzix.ultralite.utils.scroll">AutoScroller.AutoScrollEnded</a>&nbsp;client)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setCallback(com.vuzix.ultralite.utils.scroll.AutoScroller.AutoScrollEnded)" class="member-name-link">setCallback</a><wbr>(<a href="AutoScroller.AutoScrollEnded.html" title="interface in com.vuzix.ultralite.utils.scroll">AutoScroller.AutoScrollEnded</a>&nbsp;client)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Add a callback to know when the full contents have been scrolled off the screen</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setDuration(int)" class="member-name-link">setDuration</a><wbr>(int&nbsp;durationMs)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setDuration(int)" class="member-name-link">setDuration</a><wbr>(int&nbsp;durationMs)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Set the duration of each line.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setProgressCallback(com.vuzix.ultralite.utils.scroll.AutoScroller.AutoScrollProgress)" class="member-name-link">setProgressCallback</a><wbr>(<a href="AutoScroller.AutoScrollProgress.html" title="interface in com.vuzix.ultralite.utils.scroll">AutoScroller.AutoScrollProgress</a>&nbsp;client)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Add a callback to track the progress of each line as it is shown</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#start()" class="member-name-link">start</a>()</code></div>
@@ -316,6 +331,33 @@ loadScripts(document, 'script');</script>
 <dd><code>client</code> - callback method to invoke upon completion</dd>
 <dt>Since:</dt>
 <dd>1.4.0</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="setProgressCallback(com.vuzix.ultralite.utils.scroll.AutoScroller.AutoScrollProgress)">
+<h3>setProgressCallback</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setProgressCallback</span><wbr><span class="parameters">(<a href="AutoScroller.AutoScrollProgress.html" title="interface in com.vuzix.ultralite.utils.scroll">AutoScroller.AutoScrollProgress</a>&nbsp;client)</span></div>
+<div class="block">Add a callback to track the progress of each line as it is shown</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>client</code> - callback method to invoke upon completion</dd>
+<dt>Since:</dt>
+<dd>1.9.0</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getSlicedStrings()">
+<h3>getSlicedStrings</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>[]</span>&nbsp;<span class="element-name">getSlicedStrings</span>()</div>
+<div class="block">Get an array of strings with each one comprising a single line on the glasses. This
+ is useful for debugging, and for creating an on-phone preview of what the glasses will show.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>String[] Array of strings broken into lines of glasses text.</dd>
+<dt>Since:</dt>
+<dd>1.9.0</dd>
 </dl>
 </section>
 </li>

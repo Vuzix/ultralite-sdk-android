@@ -89,6 +89,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Interface class to receive a notification when the AutoScroller worker thread completes.</div>
 </dd>
+<dt><a href="com/vuzix/ultralite/utils/scroll/AutoScroller.AutoScrollProgress.html" class="type-name-link" title="interface in com.vuzix.ultralite.utils.scroll">AutoScroller.AutoScrollProgress</a> - Interface in <a href="com/vuzix/ultralite/utils/scroll/package-summary.html">com.vuzix.ultralite.utils.scroll</a></dt>
+<dd>
+<div class="block">Interface class to receive a notification when the glasses have shown a new line.</div>
+</dd>
 </dl>
 <h2 class="title" id="I:B">B</h2>
 <dl class="index">
@@ -407,6 +411,14 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Call this to get a specific line of text rendered to an image.</div>
 </dd>
+<dt><a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.html#getSlicedLines()" class="member-name-link">getSlicedLines()</a> - Method in class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.html" title="class in com.vuzix.ultralite.utils.scroll">TextToImageSlicer</a></dt>
+<dd>
+<div class="block">Returns the entire input string sliced into individual lines that fit on the glasses.</div>
+</dd>
+<dt><a href="com/vuzix/ultralite/utils/scroll/AutoScroller.html#getSlicedStrings()" class="member-name-link">getSlicedStrings()</a> - Method in class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/AutoScroller.html" title="class in com.vuzix.ultralite.utils.scroll">AutoScroller</a></dt>
+<dd>
+<div class="block">Get an array of strings with each one comprising a single line on the glasses.</div>
+</dd>
 <dt><a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.html#getStringAt(int)" class="member-name-link">getStringAt(int)</a> - Method in class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.html" title="class in com.vuzix.ultralite.utils.scroll">TextToImageSlicer</a></dt>
 <dd>
 <div class="block">Call this to get a specific line of text that will fit in a slice.</div>
@@ -599,6 +611,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Do not show any icon</div>
 </dd>
+<dt><a href="com/vuzix/ultralite/UltraliteSDK.html#NOTIFICATION_ICON_WIDTH_HEIGHT" class="member-name-link">NOTIFICATION_ICON_WIDTH_HEIGHT</a> - Static variable in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.html" title="interface in com.vuzix.ultralite">UltraliteSDK</a></dt>
+<dd>
+<div class="block">The recommended width and height of an icon for the LVGLImage sent to <a href="com/vuzix/ultralite/UltraliteSDK.html#sendNotification(java.lang.String,java.lang.String,com.vuzix.ultralite.LVGLImage)"><code>UltraliteSDK.sendNotification(String, String, LVGLImage)</code></a>.</div>
+</dd>
 <dt><a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.SliceComparison.html#numberDifferentLines" class="member-name-link">numberDifferentLines</a> - Variable in class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/TextToImageSlicer.SliceComparison.html" title="class in com.vuzix.ultralite.utils.scroll">TextToImageSlicer.SliceComparison</a></dt>
 <dd>
 <div class="block">The number of lines that are the different betweent the two objects.</div>
@@ -633,6 +649,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/vuzix/ultralite/EventListener.html#onPowerButtonPress(boolean)" class="member-name-link">onPowerButtonPress(boolean)</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/EventListener.html" title="interface in com.vuzix.ultralite">EventListener</a></dt>
 <dd>
 <div class="block">The user pressed the power button.</div>
+</dd>
+<dt><a href="com/vuzix/ultralite/utils/scroll/AutoScroller.AutoScrollProgress.html#onProgress(int,int,java.lang.String)" class="member-name-link">onProgress(int, int, String)</a> - Method in interface com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/AutoScroller.AutoScrollProgress.html" title="interface in com.vuzix.ultralite.utils.scroll">AutoScroller.AutoScrollProgress</a></dt>
+<dd>
+<div class="block">Callback method invoked each time a line is shown.</div>
 </dd>
 <dt><a href="com/vuzix/ultralite/EventListener.html#onScrolled(boolean)" class="member-name-link">onScrolled(boolean)</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/EventListener.html" title="interface in com.vuzix.ultralite">EventListener</a></dt>
 <dd>
@@ -833,6 +853,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">After requesting control to SCROLL layout and configuring <a href="com/vuzix/ultralite/UltraliteSDK.ScrollingTextView.html#scrollLayoutConfig(int,int,int,int,boolean)"><code>UltraliteSDK.ScrollingTextView.scrollLayoutConfig(int, int, int, int, boolean)</code></a>
  with autoScroll true, this will pause and resume the automatic scrolling behavior.</div>
+</dd>
+<dt><a href="com/vuzix/ultralite/utils/scroll/AutoScroller.html#setProgressCallback(com.vuzix.ultralite.utils.scroll.AutoScroller.AutoScrollProgress)" class="member-name-link">setProgressCallback(AutoScroller.AutoScrollProgress)</a> - Method in class com.vuzix.ultralite.utils.scroll.<a href="com/vuzix/ultralite/utils/scroll/AutoScroller.html" title="class in com.vuzix.ultralite.utils.scroll">AutoScroller</a></dt>
+<dd>
+<div class="block">Add a callback to track the progress of each line as it is shown</div>
 </dd>
 <dt><a href="com/vuzix/ultralite/UltraliteSDK.Canvas.html#setTextVisible(int,boolean)" class="member-name-link">setTextVisible(int, boolean)</a> - Method in interface com.vuzix.ultralite.<a href="com/vuzix/ultralite/UltraliteSDK.Canvas.html" title="interface in com.vuzix.ultralite">UltraliteSDK.Canvas</a></dt>
 <dd>
